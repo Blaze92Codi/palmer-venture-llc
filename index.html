@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palmer Venture LLC | Discipline. Service. Systems. Results.</title>
+  <meta name="description" content="Palmer Venture LLC provides practical consulting, process improvement, SOP development, leadership support, safety program support, and small business structure." />
+  <style>
+    :root {
+      --black: #050505;
+      --charcoal: #111111;
+      --dark-gray: #1b1b1b;
+      --medium-gray: #8f8f8f;
+      --light-gray: #d8d8d8;
+      --white: #ffffff;
+      --gold: #c7a45a;
+      --gold-soft: rgba(199, 164, 90, 0.18);
+      --max-width: 1180px;
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(5, 5, 5, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand img {
+      width: 58px;
+      height: 58px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .brand-text span {
+      display: block;
+      color: var(--medium-gray);
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 26px;
+      color: var(--light-gray);
+      font-size: 0.92rem;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .nav-cta {
+      padding: 11px 18px;
+      border: 1px solid var(--gold);
+      border-radius: 999px;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 720px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      padding: 86px 0;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(199,164,90,0.12), transparent 28%),
+        linear-gradient(135deg, #050505 0%, #111 48%, #050505 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 54px 54px;
+      opacity: 0.22;
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 54px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 6vw, 5.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 640px;
+      color: var(--light-gray);
+      font-size: 1.15rem;
+      margin-bottom: 34px;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.2s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 35px rgba(199,164,90,0.2);
+    }
+
+    .btn-secondary {
+      border-color: rgba(255,255,255,0.22);
+      color: var(--white);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 32px;
+      padding: 30px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+    }
+
+    .hero-card img {
+      width: 100%;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 44px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+    }
+
+    .section-heading p {
+      color: var(--light-gray);
+      font-size: 1.05rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--charcoal);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 26px;
+      min-height: 230px;
+    }
+
+    .card .number {
+      color: var(--gold);
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: var(--light-gray);
+      font-size: 0.98rem;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .panel {
+      background: linear-gradient(135deg, rgba(199,164,90,0.13), rgba(255,255,255,0.03));
+      border: 1px solid rgba(199,164,90,0.32);
+      border-radius: 28px;
+      padding: 34px;
+    }
+
+    .panel h3 {
+      font-size: 1.55rem;
+      margin-bottom: 16px;
+    }
+
+    .panel p,
+    .check-list li {
+      color: var(--light-gray);
+    }
+
+    .check-list {
+      display: grid;
+      gap: 14px;
+      list-style: none;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 900;
+    }
+
+    .services {
+      background: #090909;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .service-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .service-item {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 22px;
+      padding: 24px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .service-item h3 {
+      color: var(--gold);
+      font-size: 1.12rem;
+    }
+
+    .service-item p {
+      color: var(--light-gray);
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    form {
+      background: var(--charcoal);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 28px;
+      padding: 28px;
+      display: grid;
+      gap: 15px;
+    }
+
+    label {
+      display: grid;
+      gap: 7px;
+      color: var(--light-gray);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      background: #070707;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 12px;
+      padding: 14px 15px;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: 2px solid var(--gold-soft);
+      border-color: var(--gold);
+    }
+
+    .footer {
+      padding: 42px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: var(--medium-gray);
+      font-size: 0.92rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 920px) {
+      nav ul, .nav-cta {
+        display: none;
+      }
+
+      .hero-grid,
+      .split,
+      .contact-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-item {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Palmer Venture LLC Home">
+        <img src="assets/palmer-venture-logo.jpeg" alt="Palmer Venture LLC logo" />
+        <div class="brand-text">
+          <strong>Palmer</strong>
+          <span>Venture LLC</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="nav-cta" href="#contact">Request Consultation</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Discipline. Service. Systems. Results.</div>
+          <h1>Practical systems for stronger business operations.</h1>
+          <p>
+            Palmer Venture LLC helps businesses, leaders, and service-based operations improve structure, workflows, documentation, communication, safety processes, and long-term growth.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="#contact">Request a Consultation</a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Palmer Venture LLC brand mark">
+          <img src="assets/palmer-venture-logo.jpeg" alt="Palmer Venture LLC Discipline Service Systems Results logo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container split">
+        <div class="section-heading">
+          <div class="eyebrow">About</div>
+          <h2>Built for structure, clarity, and forward movement.</h2>
+          <p>
+            Palmer Venture LLC was created to help organizations reduce confusion, improve accountability, and build practical operating systems that people can actually use.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>What we focus on</h3>
+          <ul class="check-list">
+            <li>Simple workflows that reduce wasted time and repeated mistakes.</li>
+            <li>Clear SOPs, checklists, and training documents for daily use.</li>
+            <li>Leadership structure that supports communication and accountability.</li>
+            <li>Safety and operational systems that create consistency.</li>
+            <li>Business setup support for owners who need organized next steps.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Services</div>
+          <h2>Support that turns scattered operations into organized systems.</h2>
+          <p>
+            Services can be scaled for small businesses, service providers, internal teams, public-facing operations, and developing organizations.
+          </p>
+        </div>
+
+        <div class="service-list">
+          <div class="service-item">
+            <h3>Process Improvement</h3>
+            <p>Review current workflows, identify gaps, and create cleaner systems for daily operations, task tracking, handoffs, and accountability.</p>
+          </div>
+          <div class="service-item">
+            <h3>SOP & Documentation</h3>
+            <p>Create policies, procedures, checklists, job aids, training outlines, and operational reference documents that are clear and usable.</p>
+          </div>
+          <div class="service-item">
+            <h3>Leadership Support</h3>
+            <p>Build communication frameworks, team expectations, coaching tools, development plans, and accountability systems for supervisors and leaders.</p>
+          </div>
+          <div class="service-item">
+            <h3>Safety Program Support</h3>
+            <p>Assist with safety documentation, inspection systems, equipment tracking, training material, assessment forms, and compliance-minded workflows.</p>
+          </div>
+          <div class="service-item">
+            <h3>Small Business Structure</h3>
+            <p>Support early-stage businesses with service definitions, basic branding language, intake forms, website copy, and organized operating plans.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Process</div>
+          <h2>A simple path from problem to usable system.</h2>
+        </div>
+
+        <div class="card-grid">
+          <div class="card">
+            <div class="number">01</div>
+            <h3>Assess</h3>
+            <p>Review the current issue, workflow, document, or business need to understand what is working and what is creating friction.</p>
+          </div>
+          <div class="card">
+            <div class="number">02</div>
+            <h3>Organize</h3>
+            <p>Convert scattered information into a clear structure, service map, checklist, procedure, or operating framework.</p>
+          </div>
+          <div class="card">
+            <div class="number">03</div>
+            <h3>Deploy</h3>
+            <p>Provide a practical solution that can be used, reviewed, improved, and built into the operation over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="services">
+      <div class="container contact-wrap">
+        <div class="section-heading">
+          <div class="eyebrow">Contact</div>
+          <h2>Ready to improve your structure, process, or operation?</h2>
+          <p>
+            Complete the intake form and Palmer Venture LLC will review your request and follow up with the next step.
+          </p>
+          <p style="margin-top:18px;color:var(--light-gray);">
+            <strong style="color:var(--white);">Phone:</strong> (810) 275-3714<br />
+            <strong style="color:var(--white);">Email:</strong> palmerm.venturellc@gmail.com
+          </p>
+        </div>
+
+        <form action="mailto:palmerm.venturellc@gmail.com" method="post" enctype="text/plain">
+          <label>
+            Name
+            <input type="text" name="Name" required />
+          </label>
+
+          <label>
+            Business Name
+            <input type="text" name="Business Name" />
+          </label>
+
+          <label>
+            Phone Number
+            <input type="tel" name="Phone" />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="Email" required />
+          </label>
+
+          <label>
+            Type of Support Needed
+            <select name="Support Needed" required>
+              <option value="">Select one</option>
+              <option>Process Improvement</option>
+              <option>SOP / Documentation</option>
+              <option>Leadership Support</option>
+              <option>Safety Program Support</option>
+              <option>Small Business Structure</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            Short Description
+            <textarea name="Project Description" placeholder="Briefly describe what you need help with."></textarea>
+          </label>
+
+          <label>
+            Preferred Contact Method
+            <select name="Preferred Contact Method">
+              <option>Email</option>
+              <option>Phone</option>
+              <option>Text</option>
+            </select>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Submit Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p><strong>Palmer Venture LLC</strong> — Discipline. Service. Systems. Results.</p>
+      <p>© <span id="year"></span> Palmer Venture LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
