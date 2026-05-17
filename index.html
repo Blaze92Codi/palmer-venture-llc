@@ -153,23 +153,21 @@
 </head>
 
 <body>
-  <script>
-    const squareLinks = {
-      requestSupport: "https://square.link/u/TYfGvg86",
-      quickSupport: "https://square.link/u/TYfGvg86",
-      discovery: "https://square.link/u/L2HRMZGx",
-      standardReview: "https://square.link/u/RRhBOuZm",
-      operationalSupport: "https://square.link/u/98p2NPbZ",
-      guidedSetup: "https://square.link/u/RRhBOuZm"
-    };
+<script>
+  const squareLinks = {
+    requestSupport: "https://square.link/u/TYfGvg86",     // Request Support
+    quickSupport: "https://square.link/u/TYfGvg86",       // Quick Support Session $79
+    discovery: "https://square.link/u/L2HRMZGx",          // Workflow Discovery $149
+    standardReview: "https://square.link/u/RRhBOuZm",     // Standard Review $199
+    operationalSupport: "https://square.link/u/98p2NPbZ", // Operational Support
+    guidedSetup: "https://square.link/u/RRhBOuZm"         // Guided Setup $249
+  };
 
-    function openSquareLink(type) {
-      const url = squareLinks[type];
-      if (url) {
-        window.open(url, "_blank", "noopener");
-      }
-    }
-  </script>
+  function openSquareLink(type) {
+    const url = squareLinks[type];
+    if (url) window.open(url, "_blank", "noopener");
+  }
+</script>
 
   <header>
     <div class="container nav">
