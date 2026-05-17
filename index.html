@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Palmer Venture LLC | Discipline. Service. Systems. Results.</title>
-  <meta name="description" content="Palmer Venture LLC provides practical consulting, process improvement, SOP development, leadership support, safety program support, and small business structure." />
+
+  <title>Palmer Venture LLC | Save Time. Improve Systems. Reduce Repetitive Work.</title>
+
+  <meta name="description" content="Palmer Venture LLC helps businesses, contractors, teams, and professionals save time, improve systems, reduce repetitive work, review documents, analyze workflows, and build smarter operational support systems." />
+
   <style>
     :root {
       --black: #050505;
@@ -23,6 +26,10 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -96,7 +103,7 @@
     nav ul {
       display: flex;
       list-style: none;
-      gap: 26px;
+      gap: 24px;
       color: var(--light-gray);
       font-size: 0.92rem;
     }
@@ -190,6 +197,7 @@
       transition: 0.2s ease;
       cursor: pointer;
       border: 1px solid transparent;
+      text-align: center;
     }
 
     .btn-primary {
@@ -232,7 +240,7 @@
     }
 
     .section-heading {
-      max-width: 760px;
+      max-width: 800px;
       margin-bottom: 44px;
     }
 
@@ -246,37 +254,6 @@
     .section-heading p {
       color: var(--light-gray);
       font-size: 1.05rem;
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .card {
-      background: var(--charcoal);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: var(--radius);
-      padding: 26px;
-      min-height: 230px;
-    }
-
-    .card .number {
-      color: var(--gold);
-      font-weight: 900;
-      letter-spacing: 0.12em;
-      margin-bottom: 18px;
-    }
-
-    .card h3 {
-      font-size: 1.25rem;
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      color: var(--light-gray);
-      font-size: 0.98rem;
     }
 
     .split {
@@ -335,7 +312,7 @@
 
     .service-item {
       display: grid;
-      grid-template-columns: 260px 1fr;
+      grid-template-columns: 280px 1fr;
       gap: 22px;
       padding: 24px;
       border-radius: 18px;
@@ -352,48 +329,73 @@
       color: var(--light-gray);
     }
 
-    .contact-wrap {
+    .card-grid {
       display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 34px;
-      align-items: start;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
-    form {
+    .card {
       background: var(--charcoal);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 28px;
-      padding: 28px;
-      display: grid;
-      gap: 15px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 26px;
+      min-height: 280px;
     }
 
-    label {
-      display: grid;
-      gap: 7px;
+    .card .number {
+      color: var(--gold);
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .card p {
       color: var(--light-gray);
-      font-size: 0.9rem;
-      font-weight: 700;
+      font-size: 0.98rem;
+      margin-bottom: 18px;
     }
 
-    input, select, textarea {
-      width: 100%;
-      background: #070707;
-      color: var(--white);
-      border: 1px solid rgba(255,255,255,0.16);
-      border-radius: 12px;
-      padding: 14px 15px;
-      font: inherit;
+    .price {
+      color: var(--gold);
+      font-weight: 900;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
     }
 
-    textarea {
-      min-height: 130px;
-      resize: vertical;
+    .notice {
+      margin-top: 26px;
+      padding: 20px;
+      border: 1px solid rgba(199,164,90,0.35);
+      background: rgba(199,164,90,0.08);
+      border-radius: var(--radius);
+      color: var(--light-gray);
     }
 
-    input:focus, select:focus, textarea:focus {
-      outline: 2px solid var(--gold-soft);
-      border-color: var(--gold);
+    .faq-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: var(--charcoal);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .faq-item h3 {
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .faq-item p {
+      color: var(--light-gray);
     }
 
     .footer {
@@ -421,8 +423,7 @@
       }
 
       .hero-grid,
-      .split,
-      .contact-wrap {
+      .split {
         grid-template-columns: 1fr;
       }
 
@@ -440,7 +441,21 @@
     }
   </style>
 </head>
+
 <body>
+  <!--
+    PALMER VENTURE LLC WEBSITE UPDATE
+
+    Replace these placeholders with your Square links:
+
+    YOUR_REQUEST_SUPPORT_LINK
+    YOUR_QUICK_SUPPORT_LINK
+    YOUR_DISCOVERY_LINK
+    YOUR_STANDARD_REVIEW_LINK
+    YOUR_DEEP_REVIEW_LINK
+    YOUR_GUIDED_SETUP_LINK
+  -->
+
   <header>
     <div class="container nav">
       <a class="brand" href="#home" aria-label="Palmer Venture LLC Home">
@@ -456,11 +471,13 @@
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#process">Process</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#purchase">Purchase</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
 
-      <a class="nav-cta" href="#contact">Request Consultation</a>
+      <a class="nav-cta" href="YOUR_REQUEST_SUPPORT_LINK" target="_blank" rel="noopener">Request Support</a>
     </div>
   </header>
 
@@ -468,19 +485,21 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">Discipline. Service. Systems. Results.</div>
-          <h1>Helping businesses save time, improve systems, and reduce repetitive work.</h1>
+          <div class="eyebrow">Business Systems & Operations Support</div>
+          <h1>Save time. Improve systems. Reduce repetitive work.</h1>
           <p>
-            Palmer Venture LLC helps businesses, contractors, teams, and organizations turn scattered information into useful outputs through workflow support, documentation, reporting, data analysis, and custom operational systems.
+            Palmer Venture LLC helps businesses, contractors, teams, and professionals organize workflows,
+            improve reporting, simplify operations, review documents and data, and turn scattered work into clear systems.
           </p>
+
           <div class="button-row">
-            <a class="btn btn-primary" href="#contact">Request a Consultation</a>
-            <a class="btn btn-secondary" href="#services">View Services</a>
+            <a class="btn btn-primary" href="YOUR_REQUEST_SUPPORT_LINK" target="_blank" rel="noopener">Request Support</a>
+            <a class="btn btn-secondary" href="#purchase">Purchase a Service</a>
           </div>
         </div>
 
         <div class="hero-card" aria-label="Palmer Venture LLC brand mark">
-          <img src="palmer-venture-logo.jpeg" alt="Palmer Venture LLC Discipline Service Systems Results logo" />
+          <img src="palmer-venture-logo.jpeg" alt="Palmer Venture LLC logo" />
         </div>
       </div>
     </section>
@@ -491,18 +510,19 @@
           <div class="eyebrow">About</div>
           <h2>Built for structure, clarity, and forward movement.</h2>
           <p>
-            Palmer Venture LLC was created to help organizations reduce confusion, improve accountability, and build practical operating systems that people can actually use.
+            Palmer Venture LLC helps turn messy workflows, scattered documents, repetitive tasks,
+            and unclear processes into organized systems that support better decisions.
           </p>
         </div>
 
         <div class="panel">
-          <h3>What we focus on</h3>
+          <h3>What we help improve</h3>
           <ul class="check-list">
-            <li>Simple workflows that reduce wasted time and repeated mistakes.</li>
-            <li>Clear SOPs, checklists, and training documents for daily use.</li>
-            <li>Leadership structure that supports communication and accountability.</li>
-            <li>Safety and operational systems that create consistency.</li>
-            <li>Business setup support for owners who need organized next steps.</li>
+            <li>Repetitive tasks that waste time and slow work down.</li>
+            <li>Documents, reports, SOPs, estimates, claims, and operational files.</li>
+            <li>Activity logs, incident reports, business reporting, and workflow outputs.</li>
+            <li>Data review, photo analysis, deep research, and organized summaries.</li>
+            <li>Custom AI-supported workflows and business systems that are practical to use.</li>
           </ul>
         </div>
       </div>
@@ -514,30 +534,46 @@
           <div class="eyebrow">Services</div>
           <h2>Support that turns scattered operations into organized systems.</h2>
           <p>
-            Services can be scaled for small businesses, service providers, internal teams, public-facing operations, and developing organizations.
+            Choose a defined service package or request support for a custom workflow, document, system, or operational need.
           </p>
         </div>
 
         <div class="service-list">
           <div class="service-item">
             <h3>Workflow Discovery Consultation</h3>
-            <p>Review your workflow, repetitive tasks, documentation issues, or operational challenges to determine the best next step.</p>
+            <p>
+              Review workflows, repetitive tasks, documentation issues, reporting needs, or operational challenges
+              to identify the best next step.
+            </p>
           </div>
 
           <div class="service-item">
             <h3>Business Systems & Operations Support</h3>
-            <p>Custom support for activity logs, incident reports, business reporting, workflow improvements, SOPs, photo analysis, deep research, and operational organization.</p>
+            <p>
+              Custom support for activity logs, incident reports, business reporting, workflow improvements,
+              SOPs, photo analysis, deep research, documentation systems, and operational organization.
+            </p>
           </div>
 
           <div class="service-item">
             <h3>Data, Workflow & Document Review</h3>
-            <p>Professional review of documents, reports, spreadsheets, claims, estimates, SOPs, contracts, photos, or operational processes.</p>
+            <p>
+              Professional review of workflows, SOPs, reports, spreadsheets, claims, estimates, contracts,
+              photos, or operational processes with practical recommendations.
+            </p>
           </div>
 
           <div class="service-item">
             <h3>Operational Support & System Updates</h3>
-            <p>Ongoing support for system updates, document revisions, new task integration, reporting improvements, workflow changes, and operational collaboration.</p>
+            <p>
+              Ongoing support for system updates, document revisions, new task integration, reporting improvements,
+              workflow changes, data review, SOP updates, and operational collaboration.
+            </p>
           </div>
+        </div>
+
+        <div class="notice">
+          Private Support services are not listed publicly and are available by approval only for friends, family, trusted referrals, or special situations.
         </div>
       </div>
     </section>
@@ -552,99 +588,205 @@
         <div class="card-grid">
           <div class="card">
             <div class="number">01</div>
-            <h3>Assess</h3>
-            <p>Review the current issue, workflow, document, or business need to understand what is working and what is creating friction.</p>
+            <h3>Tell us the challenge</h3>
+            <p>
+              Share the workflow, document, report, task, or operational problem you want help improving.
+            </p>
           </div>
+
           <div class="card">
             <div class="number">02</div>
-            <h3>Organize</h3>
-            <p>Convert scattered information into a clear structure, service map, checklist, procedure, or operating framework.</p>
+            <h3>Review the request</h3>
+            <p>
+              We review the information, identify gaps, and determine the best next step or service option.
+            </p>
           </div>
+
           <div class="card">
             <div class="number">03</div>
-            <h3>Deploy</h3>
-            <p>Provide a practical solution that can be used, reviewed, improved, and built into the operation over time.</p>
+            <h3>Build, improve, or support</h3>
+            <p>
+              We help create clearer outputs, smarter workflows, better documentation, or ongoing system improvements.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="services">
-      <div class="container contact-wrap">
+    <section id="purchase" class="services">
+      <div class="container">
         <div class="section-heading">
-          <div class="eyebrow">Contact</div>
-          <h2>Ready to improve your structure, process, or operation?</h2>
+          <div class="eyebrow">Get Started</div>
+          <h2>Request support or purchase a service package.</h2>
           <p>
-            Complete the intake form and Palmer Venture LLC will review your request and follow up with the next step.
-          </p>
-          <p style="margin-top:18px;color:var(--light-gray);">
-            <strong style="color:var(--white);">Phone:</strong> (810) 275-3714<br />
-            <strong style="color:var(--white);">Email:</strong> palmerm.venturellc@gmail.com
+            Purchase a defined service below or request support for larger custom work. Larger projects may require discovery,
+            scoping, and a custom quote.
           </p>
         </div>
 
-        <form action="mailto:palmerm.venturellc@gmail.com" method="post" enctype="text/plain">
-          <label>
-            Name
-            <input type="text" name="Name" required />
-          </label>
+        <div class="card-grid">
+          <div class="card">
+            <div class="number">01</div>
+            <h3>Quick Support Session</h3>
+            <div class="price">$79</div>
+            <p>
+              30-minute support session for quick questions, troubleshooting, document help, workflow guidance,
+              or basic setup support.
+            </p>
+            <a class="btn btn-primary" href="YOUR_QUICK_SUPPORT_LINK" target="_blank" rel="noopener">Purchase — $79</a>
+          </div>
 
-          <label>
-            Business Name
-            <input type="text" name="Business Name" />
-          </label>
+          <div class="card">
+            <div class="number">02</div>
+            <h3>Workflow Discovery Consultation</h3>
+            <div class="price">$149</div>
+            <p>
+              Review workflow issues, repetitive tasks, documentation needs, operational bottlenecks,
+              or business inefficiencies.
+            </p>
+            <a class="btn btn-primary" href="YOUR_DISCOVERY_LINK" target="_blank" rel="noopener">Purchase — $149</a>
+          </div>
 
-          <label>
-            Phone Number
-            <input type="tel" name="Phone" />
-          </label>
+          <div class="card">
+            <div class="number">03</div>
+            <h3>Standard Review</h3>
+            <div class="price">$199</div>
+            <p>
+              Professional review of SOPs, workflows, documents, spreadsheets, reports, estimates, claims,
+              photos, or operational systems.
+            </p>
+            <a class="btn btn-primary" href="YOUR_STANDARD_REVIEW_LINK" target="_blank" rel="noopener">Purchase — $199</a>
+          </div>
 
-          <label>
-            Email
-            <input type="email" name="Email" required />
-          </label>
+          <div class="card">
+            <div class="number">04</div>
+            <h3>Deep Review</h3>
+            <div class="price">$349</div>
+            <p>
+              Detailed operational, document, or workflow review with deeper analysis, recommendations,
+              and improvement opportunities.
+            </p>
+            <a class="btn btn-primary" href="YOUR_DEEP_REVIEW_LINK" target="_blank" rel="noopener">Purchase — $349</a>
+          </div>
 
-          <label>
-            Type of Support Needed
-            <select name="Support Needed" required>
-              <option value="">Select one</option>
-              <option>Workflow Discovery Consultation</option>
-              <option>Business Systems & Operations Support</option>
-              <option>Data, Workflow & Document Review</option>
-              <option>Operational Support & System Updates</option>
-              <option>Other</option>
-            </select>
-          </label>
+          <div class="card">
+            <div class="number">05</div>
+            <h3>Guided Setup & Support</h3>
+            <div class="price">$249</div>
+            <p>
+              Hands-on support to help implement workflows, organize systems, improve documentation,
+              and provide guided setup assistance.
+            </p>
+            <a class="btn btn-primary" href="YOUR_GUIDED_SETUP_LINK" target="_blank" rel="noopener">Purchase — $249</a>
+          </div>
 
-          <label>
-            Short Description
-            <textarea name="Project Description" placeholder="Briefly describe what you need help with."></textarea>
-          </label>
+          <div class="card">
+            <div class="number">06</div>
+            <h3>Custom Project Request</h3>
+            <div class="price">Quote Based</div>
+            <p>
+              For business systems, AI-supported workflows, operational support, data review,
+              documentation systems, or larger custom builds.
+            </p>
+            <a class="btn btn-secondary" href="YOUR_REQUEST_SUPPORT_LINK" target="_blank" rel="noopener">Request Support</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <label>
-            Preferred Contact Method
-            <select name="Preferred Contact Method">
-              <option>Email</option>
-              <option>Phone</option>
-              <option>Text</option>
-            </select>
-          </label>
+    <section id="pricing">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Starting Pricing</div>
+          <h2>Simple starting points. Custom work is scoped by need.</h2>
+          <p>
+            Some services can be purchased directly. Larger operational systems, custom builds, and ongoing support are quoted
+            based on scope, complexity, timeline, and desired outcomes.
+          </p>
+        </div>
 
-          <button class="btn btn-primary" type="submit">Submit Request</button>
-        </form>
+        <div class="service-list">
+          <div class="service-item">
+            <h3>Discovery Sessions</h3>
+            <p>Starting at $149</p>
+          </div>
+
+          <div class="service-item">
+            <h3>Reviews & Analysis</h3>
+            <p>Starting at $199</p>
+          </div>
+
+          <div class="service-item">
+            <h3>Support & Updates</h3>
+            <p>Starting at $149</p>
+          </div>
+
+          <div class="service-item">
+            <h3>Custom Builds</h3>
+            <p>Quote based on workflow, project complexity, operational needs, and scope.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="services">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">FAQ</div>
+          <h2>Common questions.</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>What does Palmer Venture LLC help with?</h3>
+            <p>
+              Workflows, reporting, documentation, SOPs, data review, AI-supported systems,
+              operational support, and custom business process improvements.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Do you build custom AI systems?</h3>
+            <p>
+              Yes. Custom systems are scoped based on workflow, complexity, operational needs,
+              available information, and desired outcomes.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Do you offer ongoing support?</h3>
+            <p>
+              Yes. Monthly support, updates, revisions, and collaboration options are available for businesses
+              that need continued operational support.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>How do clients start?</h3>
+            <p>
+              Start by submitting a request or purchasing a defined service package. Larger projects may require
+              discovery, scoping, and a custom quote.
+            </p>
+          </div>
+        </div>
+
+        <div class="button-row" style="margin-top: 34px;">
+          <a class="btn btn-primary" href="YOUR_REQUEST_SUPPORT_LINK" target="_blank" rel="noopener">Request Support</a>
+          <a class="btn btn-secondary" href="#purchase">Purchase a Service</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p><strong>Palmer Venture LLC</strong> — Discipline. Service. Systems. Results.</p>
+      <p><strong>Palmer Venture LLC</strong> — Save Time. Improve Systems. Reduce Repetitive Work.</p>
       <p>© <span id="year"></span> Palmer Venture LLC. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
