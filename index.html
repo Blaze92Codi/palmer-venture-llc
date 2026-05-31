@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta property="og:title" content="Palmer Venture LLC — Systems That Drive Results."/>
-<meta property="og:description" content="Claim a free Business Systems Snapshot. One process reviewed, one recommendation, no cost."/>
+<meta name="description" content="Palmer Venture LLC builds AI agents that do real work — contract review, hazard inspection, research, diagnostics, and multi-agent collaboration. Systems That Drive Results."/>
+<meta property="og:title" content="Palmer Venture LLC — AI Agents Built for Real Work"/>
+<meta property="og:description" content="We build AI agents that handle contracts, inspections, research, diagnostics, and complex tasks — so you spend time on what matters."/>
 <meta property="og:url" content="https://palmerventurellc.com"/>
 <meta property="og:type" content="website"/>
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Palmer Venture LLC — Systems That Drive Results."/>
-<meta name="twitter:description" content="Claim a free Business Systems Snapshot. One process reviewed, one recommendation, no cost."/>
-<meta name="description" content="Palmer Venture LLC helps small businesses build clear, repeatable systems. Claim a free Business Systems Snapshot — one process reviewed, one recommendation, no cost."/>
-<title>Palmer Venture LLC — Systems That Drive Results.</title>
+<meta name="twitter:title" content="Palmer Venture LLC — AI Agents Built for Real Work"/>
+<meta name="twitter:description" content="Custom AI agents for contract review, site inspection, research, diagnostics, and multi-bot collaboration."/>
+<title>Palmer Venture LLC — AI Agents Built for Real Work</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -21,104 +21,137 @@ body{background:#0C0C0C;color:#E2E2E2;font-family:'Arial',sans-serif;line-height
 nav{position:sticky;top:0;z-index:100;background:rgba(12,12,12,.97);border-bottom:1px solid #1e1e1e;display:flex;align-items:center;justify-content:space-between;padding:12px 40px}
 .nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .nav-mark{width:36px;height:36px}
-.nav-wordmark{line-height:1.15}
-.nav-wordmark .top{font-size:13px;font-weight:700;color:#fff;letter-spacing:.14em}
-.nav-wordmark .sub{font-size:10px;color:#888;letter-spacing:.1em}
-.nav-links{display:flex;gap:28px;list-style:none}
+.nav-wordmark .top{font-size:13px;font-weight:700;color:#fff;letter-spacing:.14em;display:block}
+.nav-wordmark .sub{font-size:10px;color:#888;letter-spacing:.1em;display:block}
+.nav-links{display:flex;gap:24px;list-style:none}
 .nav-links a{color:#888;font-size:12.5px;text-decoration:none;letter-spacing:.02em;transition:color .2s}
 .nav-links a:hover,.nav-links a.active{color:#C9A060}
-.nav-cta{background:transparent;border:1px solid #C9A060;color:#C9A060;border-radius:24px;padding:8px 18px;font-size:12px;font-weight:700;letter-spacing:.04em;cursor:pointer;text-decoration:none;transition:background .2s,color .2s}
-.nav-cta:hover{background:#C9A060;color:#0C0C0C}
+.nav-cta{background:#C9A060;color:#0C0C0C;border:none;border-radius:24px;padding:9px 20px;font-size:12px;font-weight:700;letter-spacing:.04em;cursor:pointer;text-decoration:none;transition:background .2s}
+.nav-cta:hover{background:#b8904f}
+
+/* ── TICKER ──────────────────────────────────────────────────── */
+.ticker-wrap{background:#0a0a0a;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;padding:11px 0;overflow:hidden;white-space:nowrap}
+.ticker-track{display:inline-flex;animation:ticker 40s linear infinite}
+.ticker-track:hover{animation-play-state:paused}
+.ticker-item{font-size:12px;font-weight:700;color:#C9A060;letter-spacing:.07em;text-transform:uppercase;padding:0 44px}
+.ticker-item::after{content:'·';margin-left:44px;color:#333}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* ── HERO ────────────────────────────────────────────────────── */
-#home{min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 40px 60px;border-bottom:1px solid #1a1a1a;position:relative;overflow:hidden}
-#home::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(201,160,96,.06) 0%,transparent 70%);pointer-events:none}
-.eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#C9A060;margin-bottom:20px}
-h1{font-size:clamp(28px,4.5vw,52px);font-weight:700;color:#fff;line-height:1.18;max-width:720px;margin-bottom:20px}
-.hero-sub{font-size:17px;color:#aaa;max-width:560px;margin:0 auto 36px;line-height:1.65}
+#home{min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 40px 60px;border-bottom:1px solid #1a1a1a;position:relative;overflow:hidden}
+.hero-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(201,160,96,.07) 0%,transparent 65%);pointer-events:none}
+.eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#C9A060;margin-bottom:20px}
+h1{font-size:clamp(30px,4.5vw,54px);font-weight:700;color:#fff;line-height:1.18;max-width:760px;margin-bottom:18px}
+h1 em{font-style:normal;color:#C9A060}
+.hero-sub{font-size:17px;color:#aaa;max-width:580px;margin:0 auto 12px;line-height:1.65}
+.hero-sub2{font-size:14px;color:#666;max-width:520px;margin:0 auto 36px;line-height:1.6}
+.btn-row{display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap}
 .btn{display:inline-block;background:#C9A060;color:#0C0C0C;border:none;border-radius:32px;padding:15px 32px;font-size:15px;font-weight:700;letter-spacing:.02em;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s}
 .btn:hover{background:#b8904f;transform:translateY(-1px)}
-.btn-outline{display:inline-block;background:transparent;color:#C9A060;border:1px solid #C9A060;border-radius:32px;padding:14px 30px;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;margin-left:12px;transition:background .2s,color .2s}
+.btn-outline{display:inline-block;background:transparent;color:#C9A060;border:1px solid #C9A060;border-radius:32px;padding:14px 28px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;transition:background .2s,color .2s}
 .btn-outline:hover{background:#C9A060;color:#0C0C0C}
-.hero-support{font-size:13px;color:#666;margin-top:14px}
-.trust{font-size:12px;color:#555;margin-top:32px;letter-spacing:.04em;text-transform:uppercase}
+.hero-support{font-size:12px;color:#555;margin-top:18px;letter-spacing:.02em}
+.pillars{font-size:11px;color:#444;margin-top:28px;letter-spacing:.16em;text-transform:uppercase}
 
-/* ── SECTIONS ────────────────────────────────────────────────── */
-section{padding:80px 40px;border-bottom:1px solid #1a1a1a;max-width:1100px;margin:0 auto;width:100%}
+/* ── SECTION BASICS ──────────────────────────────────────────── */
 .section-outer{border-bottom:1px solid #1a1a1a}
+section{padding:80px 40px;max-width:1100px;margin:0 auto;width:100%}
 .section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#C9A060;margin-bottom:12px}
 h2{font-size:clamp(22px,3vw,36px);font-weight:700;color:#fff;margin-bottom:16px;line-height:1.25}
-h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:10px}
-.intro{font-size:15px;color:#aaa;max-width:660px;line-height:1.7;margin-bottom:36px}
+h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:8px}
+.intro{font-size:15px;color:#aaa;max-width:680px;line-height:1.7;margin-bottom:40px}
 
-/* ── CARDS ───────────────────────────────────────────────────── */
-.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:36px}
-.card{background:#141414;border:1px solid #2a2a2a;border-radius:8px;padding:22px 20px}
-.card-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:12px}
-.card ul{padding-left:16px;font-size:14px;color:#aaa;line-height:1.9}
-.card li{margin-bottom:2px}
+/* ── AGENT GRID ──────────────────────────────────────────────── */
+.agent-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:40px}
+.agent-card{background:#111;border:1px solid #222;border-radius:10px;padding:22px 18px;position:relative;transition:border-color .25s,transform .2s;cursor:default}
+.agent-card:hover{border-color:#C9A060;transform:translateY(-3px)}
+.agent-card:hover .agent-dot{background:#C9A060}
+.agent-dot{width:7px;height:7px;border-radius:50%;background:#2a2a2a;position:absolute;top:16px;right:16px;transition:background .25s}
+.agent-icon{font-size:28px;margin-bottom:14px;display:block;line-height:1}
+.agent-name{font-size:13.5px;font-weight:700;color:#fff;margin-bottom:6px;letter-spacing:.02em}
+.agent-desc{font-size:12.5px;color:#777;line-height:1.55}
+.agent-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#C9A060;border:1px solid #2a2a2a;border-radius:12px;padding:3px 10px;margin-top:10px}
 
-/* ── STEPS ───────────────────────────────────────────────────── */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:36px}
-.step{display:flex;gap:14px}
-.step-num{width:34px;height:34px;min-width:34px;border:1.5px solid #C9A060;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#C9A060;margin-top:2px}
-.step-body h3{font-size:14px;margin-bottom:4px}
-.step-body p{font-size:13px;color:#888;line-height:1.55}
+/* ── MULTI-BOT DIAGRAM ───────────────────────────────────────── */
+.diagram-wrap{background:#0e0e0e;border:1px solid #1e1e1e;border-radius:12px;padding:40px 32px;margin-bottom:40px;text-align:center}
+.diagram-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:28px}
+.diagram-row{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
+.d-node{background:#141414;border:1px solid #2a2a2a;border-radius:8px;padding:14px 16px;min-width:110px;text-align:center}
+.d-node.gold{border-color:#C9A060}
+.d-node-icon{font-size:20px;margin-bottom:6px;display:block}
+.d-node-label{font-size:11px;color:#aaa;font-weight:600;letter-spacing:.03em}
+.d-arrow{color:#333;font-size:18px;padding:0 8px;flex-shrink:0}
 
-/* ── BOUNDARY ────────────────────────────────────────────────── */
-.boundary{background:#111;border-left:3px solid #C9A060;padding:16px 20px;font-size:14px;color:#888;line-height:1.65;margin-bottom:32px;border-radius:0}
+/* ── SNAPSHOT GLIMPSE ────────────────────────────────────────── */
+.glimpse-wrap{background:#0e0e0e;border:1px solid #1e1e1e;border-radius:14px;padding:48px 40px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.glimpse-left h2{font-size:26px;margin-bottom:12px}
+.glimpse-left p{font-size:15px;color:#aaa;line-height:1.7;margin-bottom:24px}
+.glimpse-steps{display:flex;flex-direction:column;gap:16px}
+.glimpse-step{display:flex;gap:14px;align-items:flex-start}
+.g-num{width:30px;height:30px;min-width:30px;border:1.5px solid #C9A060;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#C9A060}
+.g-body h4{font-size:13.5px;font-weight:700;color:#fff;margin-bottom:3px}
+.g-body p{font-size:13px;color:#777;line-height:1.5}
+.glimpse-right{background:#141414;border:1px solid #222;border-radius:10px;padding:28px 24px}
+.glimpse-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:14px;display:block}
+.glimpse-right h3{font-size:18px;margin-bottom:8px}
+.glimpse-price{font-size:32px;font-weight:700;color:#C9A060;margin:6px 0 14px}
+.glimpse-right ul{padding-left:16px;font-size:13.5px;color:#888;line-height:1.95;margin-bottom:22px}
+.glimpse-note{font-size:11px;color:#444;font-style:italic;margin-top:12px;line-height:1.5}
+.req{color:#E06060}
 
 /* ── FORM ────────────────────────────────────────────────────── */
 .form-wrap{max-width:680px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .form-group{margin-bottom:16px}
-.form-group label{display:block;font-size:12.5px;font-weight:600;color:#aaa;margin-bottom:6px;letter-spacing:.02em}
+.form-group label{display:block;font-size:12.5px;font-weight:600;color:#aaa;margin-bottom:6px}
 .form-group input,.form-group select,.form-group textarea{width:100%;background:#141414;border:1px solid #2a2a2a;border-radius:5px;padding:11px 13px;font-size:14px;color:#E2E2E2;outline:none;transition:border-color .2s,box-shadow .2s;font-family:inherit}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#C9A060;box-shadow:0 0 0 3px rgba(201,160,96,.12)}
 .form-group select option{background:#141414}
 .form-group textarea{height:80px;resize:vertical}
-.req{color:#E06060}
+.form-note{font-size:12px;color:#555;margin-bottom:10px}
 .form-success{display:none;background:#141414;border:1px solid #C9A060;border-radius:8px;padding:32px;text-align:center}
 .form-success h3{color:#C9A060;margin-bottom:10px}
-.form-success p{color:#aaa;font-size:14px;line-height:1.6}
+.form-success p{color:#888;font-size:14px;line-height:1.6}
 
-/* ── PURCHASE CARD ────────────────────────────────────────────── */
-.p0-wrap{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:start}
-.p0-card{background:#141414;border:2px solid #C9A060;border-radius:10px;padding:28px 24px;text-align:center}
-.p0-badge{display:inline-block;background:#C9A060;color:#0C0C0C;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:4px 14px;border-radius:20px;margin-bottom:16px}
-.p0-price{font-size:32px;font-weight:700;color:#C9A060;margin:6px 0 14px}
-.p0-card ul{text-align:left;padding-left:16px;font-size:13.5px;color:#aaa;line-height:1.9;margin-bottom:20px}
-.p0-note{font-size:11px;color:#555;margin-top:12px;font-style:italic;line-height:1.5}
-.paid-card{background:#141414;border:1px solid #2a2a2a;border-radius:10px;padding:24px;text-align:center}
-.paid-card h3{font-size:15px;color:#fff;margin-bottom:6px}
-.paid-card .price{font-size:22px;font-weight:700;color:#fff;margin:6px 0 12px}
-.paid-card p{font-size:13px;color:#888;line-height:1.55;margin-bottom:16px}
+/* ── SERVICES ────────────────────────────────────────────────── */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.svc-card{background:#111;border:1px solid #1e1e1e;border-radius:10px;padding:24px}
+.svc-card h3{font-size:15px;color:#fff;margin-bottom:6px}
+.svc-price{font-size:20px;font-weight:700;color:#C9A060;margin:4px 0 10px}
+.svc-card p{font-size:13px;color:#777;line-height:1.55;margin-bottom:16px}
 .btn-sm{display:inline-block;background:transparent;border:1px solid #C9A060;color:#C9A060;border-radius:20px;padding:8px 18px;font-size:12px;font-weight:600;cursor:pointer;text-decoration:none;transition:background .2s,color .2s}
 .btn-sm:hover{background:#C9A060;color:#0C0C0C}
 
+/* ── FAQ ─────────────────────────────────────────────────────── */
+.faq-item{border-bottom:1px solid #1a1a1a;padding:18px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center}
+.faq-q p{font-weight:700;color:#fff;font-size:15px}
+.faq-icon{color:#C9A060;font-size:20px}
+.faq-a{font-size:14px;color:#888;line-height:1.65;margin-top:10px;display:none}
+
 /* ── FOOTER ──────────────────────────────────────────────────── */
 footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-align:center}
-.footer-mark{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px}
-.footer-pillars{font-size:11px;color:#555;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
-.footer-tagline{font-size:13px;color:#C9A060;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
-.footer-copy{font-size:12px;color:#444}
+.footer-brand{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:14px}
+.footer-pillars{font-size:11px;color:#444;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+.footer-tagline{font-size:13px;color:#C9A060;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.footer-copy{font-size:12px;color:#333}
 
-/* ── MOBILE ──────────────────────────────────────────────────── */
-@media(max-width:720px){
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
+@media(max-width:900px){
+  .agent-grid{grid-template-columns:repeat(2,1fr)}
+  .glimpse-wrap{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
   nav{padding:12px 20px}
   .nav-links{display:none}
-  section{padding:60px 24px}
-  .card-grid,.steps,.p0-wrap,.form-row{grid-template-columns:1fr}
+  section{padding:56px 20px}
+  .agent-grid{grid-template-columns:1fr 1fr}
   h1{font-size:28px}
+  .form-row{grid-template-columns:1fr}
+  .diagram-row{gap:4px}
+  .d-arrow{font-size:14px;padding:0 4px}
 }
-
-/* ── TICKER ──────────────────────────────────────────────────── */
-.ticker-wrap{background:#0a0a0a;border-top:1px solid #1e1e1e;border-bottom:1px solid #1e1e1e;padding:13px 0;overflow:hidden;white-space:nowrap}
-.ticker-track{display:inline-flex;animation:ticker 35s linear infinite}
-.ticker-track:hover{animation-play-state:paused}
-.ticker-item{font-size:13px;font-weight:600;color:#C9A060;letter-spacing:.06em;text-transform:uppercase;padding:0 48px}
-.ticker-item::after{content:'·';margin-left:48px;color:#3a3a3a}
-@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 </style>
 </head>
 <body>
@@ -126,291 +159,352 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
 <!-- NAV -->
 <nav>
   <a class="nav-brand" href="#home">
-    <svg class="nav-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="nav-mark" viewBox="0 0 36 36" fill="none">
       <polygon points="18,1 33,9.5 33,26.5 18,35 3,26.5 3,9.5" stroke="#C9A060" stroke-width="1.5" fill="none"/>
-      <line x1="4" y1="12.5" x2="8" y2="10.5" stroke="#C9A060" stroke-width="1"/>
-      <line x1="4" y1="14.5" x2="8" y2="12.5" stroke="#C9A060" stroke-width="1"/>
-      <line x1="4" y1="16.5" x2="8" y2="14.5" stroke="#C9A060" stroke-width="1"/>
-      <line x1="32" y1="12.5" x2="28" y2="10.5" stroke="#C9A060" stroke-width="1"/>
-      <line x1="32" y1="14.5" x2="28" y2="12.5" stroke="#C9A060" stroke-width="1"/>
-      <line x1="32" y1="16.5" x2="28" y2="14.5" stroke="#C9A060" stroke-width="1"/>
-      <text x="13" y="24" font-family="Arial" font-weight="700" font-size="14" fill="#fff" letter-spacing="-0.5">P</text>
+      <line x1="4" y1="12" x2="8.5" y2="10" stroke="#C9A060" stroke-width="1"/>
+      <line x1="4" y1="14.5" x2="8.5" y2="12.5" stroke="#C9A060" stroke-width="1"/>
+      <line x1="4" y1="17" x2="8.5" y2="15" stroke="#C9A060" stroke-width="1"/>
+      <line x1="32" y1="12" x2="27.5" y2="10" stroke="#C9A060" stroke-width="1"/>
+      <line x1="32" y1="14.5" x2="27.5" y2="12.5" stroke="#C9A060" stroke-width="1"/>
+      <line x1="32" y1="17" x2="27.5" y2="15" stroke="#C9A060" stroke-width="1"/>
+      <text x="12.5" y="24.5" font-family="Arial" font-weight="700" font-size="15" fill="#fff">P</text>
     </svg>
     <div class="nav-wordmark">
-      <div class="top">PALMER</div>
-      <div class="sub">— VENTURE LLC —</div>
+      <span class="top">PALMER</span>
+      <span class="sub">— VENTURE LLC —</span>
     </div>
   </a>
   <ul class="nav-links">
+    <li><a href="#agents">AI Agents</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#video">Video</a></li>
+    <li><a href="#snapshot" class="active">Free Glimpse</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#snapshot" class="active">Free Snapshot</a></li>
-    <li><a href="#purchase">Purchase</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
-  <a href="#snapshot" class="nav-cta">Get Free Snapshot</a>
+  <a href="#snapshot" class="nav-cta">Get Your Free Glimpse</a>
 </nav>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">Contract Review &amp; Coverage Gap Agent</span>
+    <span class="ticker-item">Hazard Annotation &amp; Inspection Agent</span>
+    <span class="ticker-item">AI Auto Mechanic Assistant</span>
+    <span class="ticker-item">Intel &amp; Research Agent</span>
+    <span class="ticker-item">Site Assessment Agent</span>
+    <span class="ticker-item">Multi-Bot Collaboration Systems</span>
+    <span class="ticker-item">Daily Task Automation Agent</span>
+    <span class="ticker-item">Document &amp; SOP Agent</span>
+    <span class="ticker-item">ROI-Driven AI Workflows</span>
+    <span class="ticker-item">Contract Review &amp; Coverage Gap Agent</span>
+    <span class="ticker-item">Hazard Annotation &amp; Inspection Agent</span>
+    <span class="ticker-item">AI Auto Mechanic Assistant</span>
+    <span class="ticker-item">Intel &amp; Research Agent</span>
+    <span class="ticker-item">Site Assessment Agent</span>
+    <span class="ticker-item">Multi-Bot Collaboration Systems</span>
+    <span class="ticker-item">Daily Task Automation Agent</span>
+    <span class="ticker-item">Document &amp; SOP Agent</span>
+    <span class="ticker-item">ROI-Driven AI Workflows</span>
+  </div>
+</div>
 
 <!-- HERO -->
 <div class="section-outer" id="home">
   <section style="min-height:85vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative">
-    <p class="eyebrow">Business Systems &amp; Operations Support</p>
-    <h1>Your Business Runs on Systems.<br>Let&rsquo;s Make Yours Work.</h1>
-    <p class="hero-sub">Palmer Venture LLC helps small businesses turn scattered work into clear, repeatable systems &mdash; so you can grow without the chaos.</p>
-    <div>
-      <a href="#snapshot" class="btn">Get Your Free Business Systems Snapshot</a>
-      <a href="#video" class="btn-outline">Watch the Story</a>
+    <div class="hero-glow"></div>
+    <p class="eyebrow">AI Agents &amp; Business Systems</p>
+    <h1>We Build <em>AI Agents</em> That<br>Work for Your Business.</h1>
+    <p class="hero-sub">From reading contracts and flagging coverage gaps to annotating hazard photos, diagnosing vehicles, and running complex research — we design and deploy AI agents built around what your business actually needs.</p>
+    <p class="hero-sub2">Task-specific agents. Multi-bot collaboration. Real ROI — for your business and your time.</p>
+    <div class="btn-row">
+      <a href="#agents" class="btn">See What AI Can Do</a>
+      <a href="#snapshot" class="btn-outline">Get a Free Glimpse</a>
     </div>
-    <p class="hero-support">No cost. No obligation. One focused 20-minute review and one real recommendation you can use this week.</p>
-    <p class="trust">Discipline.&nbsp;&nbsp;Service.&nbsp;&nbsp;Systems.&nbsp;&nbsp;Results.</p>
+    <p class="hero-support">Not sure where to start? The free glimpse shows you exactly what an AI agent could do for your specific situation.</p>
+    <p class="pillars">Discipline &nbsp;&nbsp;·&nbsp;&nbsp; Service &nbsp;&nbsp;·&nbsp;&nbsp; Systems &nbsp;&nbsp;·&nbsp;&nbsp; Results</p>
   </section>
 </div>
 
+<!-- AI AGENTS -->
+<div class="section-outer" id="agents">
+  <section>
+    <p class="section-label">AI Agents</p>
+    <h2>Built for Real Work. Deployed for Real Results.</h2>
+    <p class="intro">Every agent we build is purpose-built for a specific job. Not generic chatbots — working agents that read, analyze, annotate, report, and collaborate to get things done faster and with less human effort.</p>
 
-<!-- ── TICKER ─────────────────────────────────────────────── -->
-<div class="ticker-wrap" aria-hidden="true">
-  <div class="ticker-track">
-    <span class="ticker-item">Chasing the same invoice twice</span>
-    <span class="ticker-item">Rebuilding the same doc every week</span>
-    <span class="ticker-item">Missing follow-ups</span>
-    <span class="ticker-item">Can't find the file you just saved</span>
-    <span class="ticker-item">Your team asking the same question daily</span>
-    <span class="ticker-item">Writing the same email for the tenth time</span>
-    <span class="ticker-item">Scattered notes across three apps</span>
-    <span class="ticker-item">No clear system for onboarding clients</span>
-    <span class="ticker-item">Good work slipping through the cracks</span>
-    <!-- duplicate set for seamless loop -->
-    <span class="ticker-item">Chasing the same invoice twice</span>
-    <span class="ticker-item">Rebuilding the same doc every week</span>
-    <span class="ticker-item">Missing follow-ups</span>
-    <span class="ticker-item">Can't find the file you just saved</span>
-    <span class="ticker-item">Your team asking the same question daily</span>
-    <span class="ticker-item">Writing the same email for the tenth time</span>
-    <span class="ticker-item">Scattered notes across three apps</span>
-    <span class="ticker-item">No clear system for onboarding clients</span>
-    <span class="ticker-item">Good work slipping through the cracks</span>
-  </div>
+    <div class="agent-grid">
+      <div class="agent-card">
+        <div class="agent-dot"></div>
+        <span class="agent-icon">📄</span>
+        <div class="agent-name">Contract Review Agent</div>
+        <div class="agent-desc">Reads contracts, flags coverage gaps, identifies risky clauses, and surfaces what needs attention before you sign.</div>
+        <span class="agent-tag">Legal &amp; Risk</span>
+      </div>
+      <div class="agent-card">
+        <div class="agent-dot"></div>
+        <span class="agent-icon">⚠️</span>
+        <div class="agent-name">Hazard &amp; Inspection Agent</div>
+        <div class="agent-desc">Analyzes site photos, annotates hazards, maps findings to applicable standards and regulations, and generates inspection reports.</div>
+        <span class="agent-tag">Safety &amp; Compliance</span>
+      </div>
+      <div class="agent-card">
+        <div class="agent-dot"></div>
+        <span class="agent-icon">🔧</span>
+        <div class="agent-name">Auto Mechanic Assistant</div>
+        <div class="agent-desc">Supports diagnostics, interprets symptoms, surfaces repair guidance, checks parts availability, and documents service history.</div>
+        <span class="agent-tag">Automotive</span>
+      </div>
+      <div class="agent-card">
+        <div class="agent-dot"></div>
+        <span class="agent-icon">🔍</span>
+        <div class="agent-name">Intel &amp; Research Agent</div>
+        <div class="agent-desc">Runs deep research on demand — competitive intel, regulatory updates, market data, or any complex topic — and delivers structured briefings.</div>
+        <span class="agent-tag">Research &amp; Intel</span>
+      </div>
+      <div class="agent-card">
+        <div class="agent-dot"></div>
+        <span class="agent-icon">📋</span>
+        <div class="agent-name">Site Assessment Agent</div>
+        <div class="agent-desc">Conducts structured site assessments, captures findings, tracks issues over time, and produces professional reports ready to share.</div>
+        <span class="agent-tag">Field Operations</span>
+      </div>
+      <div class="agent-card">
+        <div class="agent-dot"></div>
+        <span class="agent-icon">🤖</span>
+        <div class="agent-name">Multi-Bot Collaboration</div>
+        <div class="agent-desc">Multiple agents working in sequence — one researches, one drafts, one reviews — handling complex workflows no single agent can complete alone.</div>
+        <span class="agent-tag">Advanced Systems</span>
+      </div>
+      <div class="agent-card">
+        <div class="agent-dot"></div>
+        <span class="agent-icon">📝</span>
+        <div class="agent-name">Document &amp; SOP Agent</div>
+        <div class="agent-desc">Creates, maintains, and updates SOPs, reports, templates, and operational documents — keeping your knowledge base current automatically.</div>
+        <span class="agent-tag">Operations</span>
+      </div>
+      <div class="agent-card">
+        <div class="agent-dot"></div>
+        <span class="agent-icon">⚡</span>
+        <div class="agent-name">Daily Task Assistant</div>
+        <div class="agent-desc">Handles the repetitive tasks that eat your day — follow-ups, summaries, data entry, scheduling, and routine reporting — so you don't have to.</div>
+        <span class="agent-tag">Productivity</span>
+      </div>
+    </div>
+
+    <!-- Multi-bot diagram -->
+    <div class="diagram-wrap">
+      <div class="diagram-title">How Multi-Bot Collaboration Works</div>
+      <div class="diagram-row">
+        <div class="d-node gold">
+          <span class="d-node-icon">🧠</span>
+          <div class="d-node-label">Your Request</div>
+        </div>
+        <div class="d-arrow">→</div>
+        <div class="d-node">
+          <span class="d-node-icon">🔍</span>
+          <div class="d-node-label">Research Bot</div>
+        </div>
+        <div class="d-arrow">→</div>
+        <div class="d-node">
+          <span class="d-node-icon">📄</span>
+          <div class="d-node-label">Analysis Bot</div>
+        </div>
+        <div class="d-arrow">→</div>
+        <div class="d-node">
+          <span class="d-node-icon">✍️</span>
+          <div class="d-node-label">Draft Bot</div>
+        </div>
+        <div class="d-arrow">→</div>
+        <div class="d-node">
+          <span class="d-node-icon">✅</span>
+          <div class="d-node-label">Review Bot</div>
+        </div>
+        <div class="d-arrow">→</div>
+        <div class="d-node gold">
+          <span class="d-node-icon">📬</span>
+          <div class="d-node-label">Your Result</div>
+        </div>
+      </div>
+      <p style="font-size:13px;color:#555;margin-top:20px">Each agent handles its piece. The chain handles the rest. You get the output.</p>
+    </div>
+
+    <a href="#snapshot" class="btn">Get a Free Glimpse of What's Possible</a>
+  </section>
 </div>
 
 <!-- ABOUT -->
 <div class="section-outer" id="about">
   <section>
     <p class="section-label">About</p>
-    <h2>Built for structure, clarity, and forward movement.</h2>
-    <p class="intro">Palmer Venture LLC helps turn messy workflows, scattered documents, repetitive tasks, and unclear processes into organized systems that support better decisions and less wasted time.</p>
-    <div class="card-grid">
-      <div class="card">
-        <p class="card-label">01 &mdash; Identify</p>
-        <h3>Find what wastes time</h3>
-        <p style="font-size:14px;color:#888;line-height:1.6">Repeated messages, unclear handoffs, scattered files, slow reporting, tasks rebuilt from scratch.</p>
+    <h2>Built from real operational experience.</h2>
+    <p class="intro">Palmer Venture LLC was built from real-world operations — not theory. We understand the friction that slows businesses down and we design AI agents that remove it. Every agent we build is practical, purposeful, and deployed to produce measurable results.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="background:#111;border:1px solid #1e1e1e;border-radius:8px;padding:22px 20px">
+        <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:10px">01 — Identify</p>
+        <h3>Find the friction</h3>
+        <p style="font-size:13.5px;color:#777;line-height:1.6;margin-top:6px">We locate the tasks, processes, and bottlenecks where AI can make an immediate difference.</p>
       </div>
-      <div class="card">
-        <p class="card-label">02 &mdash; Organize</p>
-        <h3>Structure the work</h3>
-        <p style="font-size:14px;color:#888;line-height:1.6">Clear workflows, folders, templates, checklists, service packets, reports, and project structures.</p>
+      <div style="background:#111;border:1px solid #1e1e1e;border-radius:8px;padding:22px 20px">
+        <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:10px">02 — Design</p>
+        <h3>Build the agent</h3>
+        <p style="font-size:13.5px;color:#777;line-height:1.6;margin-top:6px">Purpose-built for your specific use case — not a generic tool, but an agent shaped around your workflow.</p>
       </div>
-      <div class="card">
-        <p class="card-label">03 &mdash; Build</p>
-        <h3>Practical systems</h3>
-        <p style="font-size:14px;color:#888;line-height:1.6">Cleaner workflows, faster reporting, better documentation, and stronger daily structure with human review in control.</p>
+      <div style="background:#111;border:1px solid #1e1e1e;border-radius:8px;padding:22px 20px">
+        <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:10px">03 — Deploy</p>
+        <h3>Measure the ROI</h3>
+        <p style="font-size:13.5px;color:#777;line-height:1.6;margin-top:6px">We deploy, refine, and track — making sure the agent delivers real time savings and measurable value.</p>
       </div>
     </div>
   </section>
 </div>
 
-<!-- VIDEO PLACEHOLDER -->
-<div class="section-outer" id="video">
-  <section>
-    <p class="section-label">60-Second Overview</p>
-    <h2>See How It Works in 60 Seconds.</h2>
-    <p class="intro">A quick, plain-English overview of what Palmer Venture LLC does, who it is for, and how the free Snapshot works.</p>
-    <div style="background:#141414;border:1px solid #2a2a2a;border-radius:10px;padding:48px 32px;max-width:680px;line-height:1.75;font-size:15px;color:#aaa">
-      <p style="margin-bottom:16px">If your business feels disorganized &mdash; like you are always reacting instead of running things the way you planned &mdash; you are not alone.</p>
-      <p style="margin-bottom:16px">Most small businesses grow faster than their systems do. Work piles up, things get missed, and the owner ends up doing everything manually just to keep the business running.</p>
-      <p style="margin-bottom:16px">At Palmer Venture LLC, we help business owners clean that up. Simple, clear systems that make running your business feel manageable again.</p>
-      <p style="margin-bottom:24px">Right now, we are offering a free Business Systems Snapshot &mdash; a 20-minute review of one part of your workflow and one practical recommendation, at no cost and no obligation.</p>
-      <a href="#snapshot" class="btn">Claim Your Free Snapshot</a>
-    </div>
-  </section>
-</div>
-
-<!-- FREE SNAPSHOT OFFER -->
+<!-- FREE GLIMPSE (reframed Snapshot) -->
 <div class="section-outer" id="snapshot">
   <section>
-    <p class="section-label">Free Offer</p>
-    <h2>What Is the Free Business Systems Snapshot?</h2>
-    <p class="intro">We look at how one specific process works today &mdash; taking on clients, tracking jobs, handling billing, or communicating with your team. Then we give you one clear, practical improvement you can put into place right away. No upsell. No pitch call. Just one real recommendation.</p>
-
-    <div class="card-grid">
-      <div class="card">
-        <p class="card-label">What you get</p>
-        <ul>
-          <li>20-minute review of one process</li>
-          <li>One written recommendation</li>
-          <li>Clear implementation guidance</li>
-          <li>Delivered within 1&ndash;2 business days</li>
-        </ul>
+    <div class="glimpse-wrap">
+      <div class="glimpse-left">
+        <p class="section-label">Free Glimpse</p>
+        <h2>See What an AI Agent Could Do for You.</h2>
+        <p>Tell us one challenge — a task that eats your time, a process that's broken, or something you wish could run itself. We will show you exactly what an AI agent built for your situation could look like.</p>
+        <p style="font-size:14px;color:#666;margin-top:8px;margin-bottom:28px">This is not a generic pitch. It is a focused look at your specific problem and a real answer.</p>
+        <div class="glimpse-steps">
+          <div class="glimpse-step">
+            <div class="g-num">1</div>
+            <div class="g-body"><h4>Describe your challenge</h4><p>Fill out the short form — takes two minutes. Tell us what's wasting your time or what you wish could run on autopilot.</p></div>
+          </div>
+          <div class="glimpse-step">
+            <div class="g-num">2</div>
+            <div class="g-body"><h4>We assess and respond</h4><p>Palmer Venture LLC reviews your submission and responds within 1–2 business days.</p></div>
+          </div>
+          <div class="glimpse-step">
+            <div class="g-num">3</div>
+            <div class="g-body"><h4>You get a real answer</h4><p>One clear, written recommendation — what an AI agent built for your situation could do, and how it would work.</p></div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <p class="card-label">What this is not</p>
+      <div class="glimpse-right">
+        <span class="glimpse-tag">Start Here — Free</span>
+        <h3>Free AI Agent Glimpse</h3>
+        <p class="glimpse-price">$0</p>
         <ul>
-          <li>Not a full business audit</li>
-          <li>Not an unlimited consultation</li>
-          <li>Not a sales call in disguise</li>
-          <li>Not a list of expensive tools</li>
+          <li>20-minute focused assessment</li>
+          <li>One written AI agent recommendation</li>
+          <li>Specific to your business and challenge</li>
+          <li>No pitch, no pressure, no obligation</li>
+          <li>Delivered within 1–2 business days</li>
         </ul>
-      </div>
-      <div class="card">
-        <p class="card-label">Who it&rsquo;s for</p>
-        <ul>
-          <li>Things falling through the cracks</li>
-          <li>Doing the same task twice</li>
-          <li>Know something&rsquo;s off, unsure what</li>
-          <li>Want practical help, not theory</li>
-        </ul>
+        <a href="#glimpse-form" class="btn" style="width:100%;text-align:center;display:block">Claim Your Free Glimpse</a>
+        <p class="glimpse-note">Limited availability. One recommendation per request. Anything beyond the free glimpse is available as a paid engagement.</p>
       </div>
     </div>
-
-    <h3 style="margin-bottom:20px;color:#C9A060;font-size:14px;text-transform:uppercase;letter-spacing:.1em">How It Works</h3>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Fill out the form below</h3>
-          <p>Tell us which part of your business you want us to look at. Takes two minutes.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>We review your submission</h3>
-          <p>Palmer Venture LLC reviews what you shared and contacts you within 1&ndash;2 business days.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>You get one recommendation</h3>
-          <p>One clear, written improvement you can act on right away &mdash; at no cost.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="boundary">The Snapshot is limited to a 20-minute review and one recommendation. Additional analysis, system design, or ongoing support is available as paid work. We will always be upfront about what falls inside and outside the free offer.</div>
-
-    <a href="#snapshot-form" class="btn">Claim Your Free Snapshot</a>
   </section>
 </div>
 
-<!-- LEAD FORM -->
-<div class="section-outer" id="snapshot-form">
+<!-- FORM -->
+<div class="section-outer" id="glimpse-form">
   <section>
-    <p class="section-label">Claim Your Free Snapshot</p>
-    <h2>Tell us about your business</h2>
-    <p class="intro" style="margin-bottom:32px">We will be in touch within 1&ndash;2 business days.</p>
-
+    <p class="section-label">Request Your Free Glimpse</p>
+    <h2>Tell us what you want an AI agent to handle.</h2>
+    <p class="intro" style="margin-bottom:32px">We will review what you share and respond with a real, specific recommendation within 1–2 business days.</p>
     <div class="form-wrap">
-      <form id="snapshotForm" onsubmit="submitForm(event)">
+      <form id="glimpseForm" onsubmit="submitForm(event)">
         <div class="form-row">
-          <div class="form-group">
-            <label>First Name <span class="req">*</span></label>
-            <input type="text" name="first_name" required placeholder="Jane"/>
-          </div>
-          <div class="form-group">
-            <label>Last Name <span class="req">*</span></label>
-            <input type="text" name="last_name" required placeholder="Smith"/>
-          </div>
+          <div class="form-group"><label>First Name <span class="req">*</span></label><input type="text" required placeholder="Jane"/></div>
+          <div class="form-group"><label>Last Name <span class="req">*</span></label><input type="text" required placeholder="Smith"/></div>
         </div>
-        <div class="form-group">
-          <label>Email Address <span class="req">*</span></label>
-          <input type="email" name="email" required placeholder="jane@yourbusiness.com"/>
-        </div>
-        <div class="form-group">
-          <label>Business Name</label>
-          <input type="text" name="business_name" placeholder="Optional"/>
-        </div>
+        <div class="form-group"><label>Email Address <span class="req">*</span></label><input type="email" required placeholder="jane@yourbusiness.com"/></div>
+        <div class="form-group"><label>Business Name</label><input type="text" placeholder="Optional"/></div>
         <div class="form-row">
           <div class="form-group">
             <label>Type of Business <span class="req">*</span></label>
-            <select name="business_type" required>
+            <select required>
               <option value="" disabled selected>Select one&hellip;</option>
-              <option>Service Business</option>
-              <option>Retail</option>
-              <option>Trades</option>
-              <option>Other</option>
+              <option>Service Business</option><option>Trades</option><option>Retail</option>
+              <option>Automotive</option><option>Legal / Insurance</option>
+              <option>Field Operations / Inspection</option><option>Other</option>
             </select>
           </div>
           <div class="form-group">
-            <label>Area to Review <span class="req">*</span></label>
-            <select name="review_area" required>
+            <label>Which agent interests you most? <span class="req">*</span></label>
+            <select required>
               <option value="" disabled selected>Select one&hellip;</option>
-              <option>Taking on new clients</option>
-              <option>Tracking jobs or projects</option>
-              <option>Billing and payments</option>
-              <option>Team communication</option>
-              <option>Other</option>
+              <option>Contract Review Agent</option>
+              <option>Hazard &amp; Inspection Agent</option>
+              <option>Auto Mechanic Assistant</option>
+              <option>Intel &amp; Research Agent</option>
+              <option>Site Assessment Agent</option>
+              <option>Multi-Bot Collaboration</option>
+              <option>Document &amp; SOP Agent</option>
+              <option>Daily Task Assistant</option>
+              <option>Not sure — tell me what fits</option>
             </select>
           </div>
         </div>
         <div class="form-group">
-          <label>Biggest challenge right now?</label>
-          <textarea name="challenge" placeholder="Optional — helps us tailor the recommendation."></textarea>
+          <label>Describe the task or challenge you want an AI agent to handle. <span class="req">*</span></label>
+          <textarea required placeholder="Example: I spend 3 hours a week reading contracts looking for liability gaps. Or: I need someone to annotate inspection photos against OSHA standards automatically."></textarea>
         </div>
         <div class="form-group">
           <label>How did you hear about us?</label>
-          <select name="referral">
+          <select>
             <option value="" disabled selected>Select one&hellip;</option>
-            <option>Social media</option>
-            <option>Referral</option>
-            <option>Google search</option>
-            <option>Other</option>
+            <option>Social media</option><option>Referral</option><option>Google search</option><option>Other</option>
           </select>
         </div>
-        <p style="font-size:12px;color:#666;margin-bottom:8px"><span style="color:#E06060">*</span> Required field</p>
-        <button type="submit" class="btn" style="margin-top:4px">Send My Snapshot Request</button>
+        <p class="form-note"><span class="req">*</span> Required field</p>
+        <button type="submit" class="btn">Send My Glimpse Request</button>
       </form>
-
       <div class="form-success" id="formSuccess">
         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" style="margin-bottom:16px"><circle cx="22" cy="22" r="21" stroke="#C9A060" stroke-width="1.5"/><polyline points="13,22 19,28 31,16" stroke="#C9A060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <h3>Request received.</h3>
-        <p>A member of the Palmer Venture LLC team will reach out within 1&ndash;2 business days.<br>Keep an eye on your inbox &mdash; including your spam folder, just in case.</p>
+        <p>Palmer Venture LLC will review your submission and respond within 1–2 business days with a real, specific AI agent recommendation for your situation.</p>
       </div>
     </div>
   </section>
 </div>
 
-<!-- PURCHASE -->
-<div class="section-outer" id="purchase">
+<!-- SERVICES -->
+<div class="section-outer" id="services">
   <section>
     <p class="section-label">Services</p>
-    <h2>Request support or purchase a service package.</h2>
-    <p class="intro" style="margin-bottom:36px">Start free, or go straight to a defined service package for larger work.</p>
-
-    <div class="p0-wrap">
-      <div class="p0-card">
-        <div class="p0-badge">Start Here &mdash; Free</div>
-        <h3 style="color:#fff;font-size:17px;margin-bottom:4px">Free Business Systems Snapshot</h3>
-        <p class="p0-price">$0</p>
-        <ul>
-          <li>20-minute workflow review</li>
-          <li>One written recommendation</li>
-          <li>Delivered in 1&ndash;2 business days</li>
-        </ul>
-        <a href="#snapshot-form" class="btn">Claim Free Snapshot</a>
-        <p class="p0-note">Limited availability. One recommendation per request. Anything beyond is available as paid work.</p>
+    <h2>Ready to go further?</h2>
+    <p class="intro" style="margin-bottom:36px">Start with a free glimpse, or go straight to a defined engagement. Every service is built around your specific workflow and use case.</p>
+    <div class="services-grid">
+      <div class="svc-card">
+        <h3>Agent Discovery Consultation</h3>
+        <p class="svc-price">$149</p>
+        <p>A deep-dive session to map your workflows, identify the highest-ROI opportunities for AI agents, and define the build scope.</p>
+        <a href="#glimpse-form" class="btn-sm">Start Discovery</a>
       </div>
-      <div class="paid-card">
-        <h3>Workflow Discovery</h3>
-        <p class="price">$149</p>
-        <p>Review workflow issues, repetitive tasks, documentation needs, and operational bottlenecks.</p>
-        <a href="#snapshot-form" class="btn-sm">Get Started</a>
+      <div class="svc-card">
+        <h3>Single Agent Build</h3>
+        <p class="svc-price">$199+</p>
+        <p>Design and deployment of one purpose-built AI agent — contract review, inspection, research, diagnostics, or task automation.</p>
+        <a href="#glimpse-form" class="btn-sm">Get Started</a>
       </div>
-      <div class="paid-card">
-        <h3>Standard Review</h3>
-        <p class="price">$199</p>
-        <p>Professional review of SOPs, workflows, documents, reports, or operational systems.</p>
-        <a href="#snapshot-form" class="btn-sm">Get Started</a>
+      <div class="svc-card">
+        <h3>Multi-Bot System</h3>
+        <p class="svc-price">Custom Quote</p>
+        <p>Full multi-agent collaboration systems for complex workflows — scoped, designed, and deployed based on your operational needs.</p>
+        <a href="#glimpse-form" class="btn-sm">Request a Quote</a>
+      </div>
+      <div class="svc-card">
+        <h3>Ongoing Agent Support</h3>
+        <p class="svc-price">Starting at $149/mo</p>
+        <p>Maintenance, refinement, and expansion of existing agents — keeping your systems current and performing as your needs evolve.</p>
+        <a href="#glimpse-form" class="btn-sm">Get Support</a>
+      </div>
+      <div class="svc-card">
+        <h3>Document &amp; SOP Build</h3>
+        <p class="svc-price">$199</p>
+        <p>AI-assisted creation of SOPs, reports, templates, and operational documentation systems that update themselves.</p>
+        <a href="#glimpse-form" class="btn-sm">Get Started</a>
+      </div>
+      <div class="svc-card">
+        <h3>Custom Project</h3>
+        <p class="svc-price">Quote Based</p>
+        <p>Something unique? We scope and build custom AI workflows, agent pipelines, and operational systems for any use case.</p>
+        <a href="#glimpse-form" class="btn-sm">Start Here</a>
       </div>
     </div>
   </section>
@@ -422,33 +516,25 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
     <p class="section-label">FAQ</p>
     <h2>Common questions.</h2>
     <div style="max-width:680px">
-      <div class="faq-item" onclick="toggleFaq(this)" style="border-bottom:1px solid #1e1e1e;padding:18px 0;cursor:pointer">
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <p style="font-weight:700;color:#fff;font-size:15px">What is the free Snapshot exactly?</p>
-          <span style="color:#C9A060;font-size:20px;transition:transform .2s">+</span>
-        </div>
-        <p style="font-size:14px;color:#888;line-height:1.65;margin-top:10px;display:none">A 20-minute review of one part of your business workflow and one written, practical recommendation you can act on right away. No cost, no obligation, no follow-up pitch.</p>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>What exactly is an AI agent?</p><span class="faq-icon">+</span></div>
+        <p class="faq-a">An AI agent is a purpose-built system that performs a specific task autonomously — reading and analyzing documents, annotating photos, running research, generating reports, or handling routine work — without needing you to do it manually. Unlike a chatbot you talk to, an agent works on a task and delivers a result.</p>
       </div>
-      <div class="faq-item" onclick="toggleFaq(this)" style="border-bottom:1px solid #1e1e1e;padding:18px 0;cursor:pointer">
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <p style="font-weight:700;color:#fff;font-size:15px">What happens after I submit the form?</p>
-          <span style="color:#C9A060;font-size:20px;transition:transform .2s">+</span>
-        </div>
-        <p style="font-size:14px;color:#888;line-height:1.65;margin-top:10px;display:none">You will receive a confirmation email within 24 hours. We will review what you shared and deliver one written recommendation within 1&ndash;2 business days.</p>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>What is the free glimpse?</p><span class="faq-icon">+</span></div>
+        <p class="faq-a">You describe one challenge or task. We review it and respond with a specific written recommendation — what an AI agent built for your situation could do and how it would work. No cost, no obligation, no generic pitch. It is a real look at what is possible for your specific problem.</p>
       </div>
-      <div class="faq-item" onclick="toggleFaq(this)" style="border-bottom:1px solid #1e1e1e;padding:18px 0;cursor:pointer">
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <p style="font-weight:700;color:#fff;font-size:15px">What if I need more than one recommendation?</p>
-          <span style="color:#C9A060;font-size:20px;transition:transform .2s">+</span>
-        </div>
-        <p style="font-size:14px;color:#888;line-height:1.65;margin-top:10px;display:none">The free Snapshot covers one process and one recommendation. Additional work is available as a paid engagement. We will always be upfront about what falls inside and outside the free offer.</p>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>Do I need to be technical to use an AI agent?</p><span class="faq-icon">+</span></div>
+        <p class="faq-a">No. We handle the design and deployment. You describe what you need the agent to do, and we build it to work in a way that fits how you already operate. Most agents are designed to be used with minimal technical knowledge.</p>
       </div>
-      <div class="faq-item" onclick="toggleFaq(this)" style="border-bottom:1px solid #1e1e1e;padding:18px 0;cursor:pointer">
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <p style="font-weight:700;color:#fff;font-size:15px">Do you work with any type of business?</p>
-          <span style="color:#C9A060;font-size:20px;transition:transform .2s">+</span>
-        </div>
-        <p style="font-size:14px;color:#888;line-height:1.65;margin-top:10px;display:none">Yes. We work with service businesses, trades, retail operations, and any small business owner who wants clearer, more organized workflows. If your business runs on people, processes, and paperwork &mdash; we can help.</p>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>What kinds of businesses do you work with?</p><span class="faq-icon">+</span></div>
+        <p class="faq-a">Any business where work involves documents, inspections, research, reporting, contracts, diagnostics, or repetitive daily tasks. Service businesses, trades, automotive, legal, insurance, field operations, and any owner who wants to get more done without adding headcount.</p>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>How long does it take to build an agent?</p><span class="faq-icon">+</span></div>
+        <p class="faq-a">Scope determines timeline. Simple single-purpose agents can be designed and delivered quickly. Multi-bot collaboration systems require discovery, scoping, and a build phase. We provide a clear timeline after the initial consultation.</p>
       </div>
     </div>
   </section>
@@ -456,43 +542,43 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-mark">
-    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><polygon points="18,1 33,9.5 33,26.5 18,35 3,26.5 3,9.5" stroke="#C9A060" stroke-width="1.5" fill="none"/><text x="13" y="24" font-family="Arial" font-weight="700" font-size="14" fill="#fff" letter-spacing="-0.5">P</text></svg>
+  <div class="footer-brand">
+    <svg width="30" height="30" viewBox="0 0 36 36" fill="none"><polygon points="18,1 33,9.5 33,26.5 18,35 3,26.5 3,9.5" stroke="#C9A060" stroke-width="1.5" fill="none"/><text x="12.5" y="24.5" font-family="Arial" font-weight="700" font-size="15" fill="#fff">P</text></svg>
     <div>
       <div style="font-size:13px;font-weight:700;color:#fff;letter-spacing:.12em">PALMER</div>
-      <div style="font-size:10px;color:#666;letter-spacing:.1em">— VENTURE LLC —</div>
+      <div style="font-size:10px;color:#555;letter-spacing:.1em">— VENTURE LLC —</div>
     </div>
   </div>
-  <p class="footer-pillars">Discipline.&nbsp;&nbsp;Service.&nbsp;&nbsp;Systems.&nbsp;&nbsp;Results.</p>
+  <p class="footer-pillars">Discipline &nbsp;·&nbsp; Service &nbsp;·&nbsp; Systems &nbsp;·&nbsp; Results</p>
   <p class="footer-tagline">Systems That Drive Results.</p>
-  <p class="footer-copy">palmerventurellc.com &nbsp;&bull;&nbsp; &copy; Palmer Venture LLC. All rights reserved.</p>
+  <p class="footer-copy">palmerventurellc.com &nbsp;·&nbsp; &copy; Palmer Venture LLC. All rights reserved.</p>
 </footer>
 
 <script>
 function submitForm(e){
   e.preventDefault();
-  document.getElementById('snapshotForm').style.display='none';
-  document.getElementById('formSuccess').style.display='block';
-  window.scrollTo({top:document.getElementById('formSuccess').offsetTop-100,behavior:'smooth'});
+  document.getElementById('glimpseForm').style.display='none';
+  var s=document.getElementById('formSuccess');
+  s.style.display='block';
+  s.scrollIntoView({behavior:'smooth',block:'center'});
 }
 function toggleFaq(el){
-  const ans=el.querySelector('p:last-child');
-  const icon=el.querySelector('span');
-  const open=ans.style.display==='block';
-  ans.style.display=open?'none':'block';
-  icon.textContent=open?'+':'−';
+  var a=el.querySelector('.faq-a');
+  var i=el.querySelector('.faq-icon');
+  var open=a.style.display==='block';
+  a.style.display=open?'none':'block';
+  i.textContent=open?'+':'−';
 }
-// Active nav highlight on scroll
-const sections=['home','about','video','snapshot','snapshot-form','purchase','faq'];
-window.addEventListener('scroll',()=>{
-  const pos=window.scrollY+80;
-  sections.forEach(id=>{
-    const el=document.getElementById(id);
+const sections=['home','agents','about','snapshot','glimpse-form','services','faq'];
+window.addEventListener('scroll',function(){
+  var pos=window.scrollY+80;
+  sections.forEach(function(id){
+    var el=document.getElementById(id);
     if(!el)return;
-    const link=document.querySelector(`.nav-links a[href="#${id}"]`);
+    var link=document.querySelector('.nav-links a[href="#'+id+'"]');
     if(!link)return;
-    if(pos>=el.offsetTop && pos<el.offsetTop+el.offsetHeight){
-      document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+    if(pos>=el.offsetTop&&pos<el.offsetTop+el.offsetHeight){
+      document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('active')});
       link.classList.add('active');
     }
   });
