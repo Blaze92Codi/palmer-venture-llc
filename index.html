@@ -408,11 +408,13 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
     <p class="intro" style="margin-bottom:32px">We will review what you share and respond with a real, specific recommendation within 1–2 business days.</p>
     <div class="form-wrap">
       <form id="glimpseForm" onsubmit="submitForm(event)">
+        <input type="hidden" name="_subject" value="New Free Glimpse Request — Palmer Venture LLC"/>
+        <input type="hidden" name="_replyto" value=""/>
         <div class="form-row">
           <div class="form-group"><label>First Name <span class="req">*</span></label><input type="text" required placeholder="Jane"/></div>
           <div class="form-group"><label>Last Name <span class="req">*</span></label><input type="text" required placeholder="Smith"/></div>
         </div>
-        <div class="form-group"><label>Email Address <span class="req">*</span></label><input type="email" required placeholder="jane@yourbusiness.com"/></div>
+        <div class="form-group"><label>Email Address <span class="req">*</span></label><input type="email" name="email" id="emailField" required placeholder="jane@yourbusiness.com" oninput="document.querySelector('[name=_replyto]').value=this.value"/></div>
         <div class="form-group"><label>Business Name</label><input type="text" placeholder="Optional"/></div>
         <div class="form-row">
           <div class="form-group">
@@ -555,12 +557,33 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
 </footer>
 
 <script>
-function submitForm(e){
+async function submitForm(e){
   e.preventDefault();
-  document.getElementById('glimpseForm').style.display='none';
-  var s=document.getElementById('formSuccess');
-  s.style.display='block';
-  s.scrollIntoView({behavior:'smooth',block:'center'});
+  var form=document.getElementById('glimpseForm');
+  var btn=form.querySelector('button[type=submit]');
+  btn.textContent='Sending...';
+  btn.disabled=true;
+  try{
+    var res=await fetch('https://formspree.io/f/xzdwqaer',{
+      method:'POST',
+      body:new FormData(form),
+      headers:{'Accept':'application/json'}
+    });
+    if(res.ok){
+      form.style.display='none';
+      var s=document.getElementById('formSuccess');
+      s.style.display='block';
+      s.scrollIntoView({behavior:'smooth',block:'center'});
+    } else {
+      btn.textContent='Send My Glimpse Request';
+      btn.disabled=false;
+      alert('Something went wrong. Please try again or email us directly at palmerventurellc.com');
+    }
+  } catch(err){
+    btn.textContent='Send My Glimpse Request';
+    btn.disabled=false;
+    alert('Network error. Please check your connection and try again.');
+  }
 }
 function toggleFaq(el){
   var a=el.querySelector('.faq-a');
