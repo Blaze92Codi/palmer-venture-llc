@@ -103,6 +103,14 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
   .card-grid,.steps,.p0-wrap,.form-row{grid-template-columns:1fr}
   h1{font-size:28px}
 }
+
+/* ── TICKER ──────────────────────────────────────────────────── */
+.ticker-wrap{background:#0a0a0a;border-top:1px solid #1e1e1e;border-bottom:1px solid #1e1e1e;padding:13px 0;overflow:hidden;white-space:nowrap}
+.ticker-track{display:inline-flex;animation:ticker 35s linear infinite}
+.ticker-track:hover{animation-play-state:paused}
+.ticker-item{font-size:13px;font-weight:600;color:#C9A060;letter-spacing:.06em;text-transform:uppercase;padding:0 48px}
+.ticker-item::after{content:'·';margin-left:48px;color:#3a3a3a}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 </style>
 </head>
 <body>
@@ -149,6 +157,32 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
     <p class="hero-support">No cost. No obligation. One focused 20-minute review and one real recommendation you can use this week.</p>
     <p class="trust">Discipline.&nbsp;&nbsp;Service.&nbsp;&nbsp;Systems.&nbsp;&nbsp;Results.</p>
   </section>
+</div>
+
+
+<!-- ── TICKER ─────────────────────────────────────────────── -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">Chasing the same invoice twice</span>
+    <span class="ticker-item">Rebuilding the same doc every week</span>
+    <span class="ticker-item">Missing follow-ups</span>
+    <span class="ticker-item">Can't find the file you just saved</span>
+    <span class="ticker-item">Your team asking the same question daily</span>
+    <span class="ticker-item">Writing the same email for the tenth time</span>
+    <span class="ticker-item">Scattered notes across three apps</span>
+    <span class="ticker-item">No clear system for onboarding clients</span>
+    <span class="ticker-item">Good work slipping through the cracks</span>
+    <!-- duplicate set for seamless loop -->
+    <span class="ticker-item">Chasing the same invoice twice</span>
+    <span class="ticker-item">Rebuilding the same doc every week</span>
+    <span class="ticker-item">Missing follow-ups</span>
+    <span class="ticker-item">Can't find the file you just saved</span>
+    <span class="ticker-item">Your team asking the same question daily</span>
+    <span class="ticker-item">Writing the same email for the tenth time</span>
+    <span class="ticker-item">Scattered notes across three apps</span>
+    <span class="ticker-item">No clear system for onboarding clients</span>
+    <span class="ticker-item">Good work slipping through the cracks</span>
+  </div>
 </div>
 
 <!-- ABOUT -->
