@@ -165,6 +165,24 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
 .testimonial-placeholder{text-align:center;padding:40px 24px;background:#0e0e0e;border:1px dashed #222;border-radius:10px}
 .testimonial-placeholder p{font-size:13px;color:#444;line-height:1.7}
 @media(max-width:720px){.testimonials-grid{grid-template-columns:1fr}}
+
+/* ── RETAINER PLANS ──────────────────────────────────────────── */
+.plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:40px}
+.plan-card{background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:28px 24px;display:flex;flex-direction:column}
+.plan-card.featured{border:2px solid #C9A060;background:#0f0f0f;position:relative}
+.plan-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#C9A060;color:#0C0C0C;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:4px 16px;border-radius:20px;white-space:nowrap}
+.plan-name{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:10px}
+.plan-price{font-size:36px;font-weight:700;color:#fff;line-height:1}
+.plan-period{font-size:13px;color:#555;margin-bottom:16px;margin-top:4px}
+.plan-desc{font-size:13px;color:#777;line-height:1.6;margin-bottom:20px}
+.plan-features{list-style:none;padding:0;margin:0 0 24px;flex:1}
+.plan-features li{font-size:13px;color:#aaa;padding:7px 0;border-bottom:1px solid #1a1a1a;display:flex;align-items:flex-start;gap:8px}
+.plan-features li::before{content:"✓";color:#C9A060;font-weight:700;flex-shrink:0;margin-top:1px}
+.plan-note{font-size:11px;color:#444;font-style:italic;margin-top:12px;text-align:center}
+.plans-intro{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:gap}
+.passive-badge{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:6px;padding:10px 16px;font-size:12px;color:#888}
+.passive-badge strong{color:#C9A060}
+@media(max-width:720px){.plans-grid{grid-template-columns:1fr}}
 </style>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDQP6BWKTC"></script>
@@ -540,7 +558,76 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
     <p class="section-label">Services</p>
     <h2>Ready to go further?</h2>
     <p class="intro" style="margin-bottom:36px">Start with a free glimpse, or go straight to a defined engagement. Every service is built around your specific workflow and use case.</p>
-    <div class="services-grid">
+    
+    <p class="section-label" style="margin-bottom:8px">Monthly Plans</p>
+    <h2 style="margin-bottom:8px">Keep your agents running. Keep your ROI growing.</h2>
+    <p class="intro" style="margin-bottom:12px">After your agent is built, a monthly plan keeps it maintained, updated, and performing. Set it up once — it runs every month.</p>
+
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px;flex-wrap:wrap">
+      <div class="passive-badge">Recurring revenue for you &nbsp;·&nbsp; <strong>Ongoing value for your clients</strong></div>
+      <div class="passive-badge">Cancel anytime &nbsp;·&nbsp; No long-term contracts</div>
+    </div>
+
+    <div class="plans-grid">
+
+      <div class="plan-card">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price">$99</div>
+        <div class="plan-period">per month</div>
+        <div class="plan-desc">One agent, maintained and running. Perfect for businesses that need one core workflow handled automatically every month.</div>
+        <ul class="plan-features">
+          <li>1 active AI agent</li>
+          <li>Monthly maintenance &amp; updates</li>
+          <li>Performance monitoring</li>
+          <li>Email support</li>
+          <li>Monthly usage summary</li>
+        </ul>
+        <a href="#glimpse-form" class="btn-sm" style="text-align:center">Get Started</a>
+      </div>
+
+      <div class="plan-card featured">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-name">Growth</div>
+        <div class="plan-price">$249</div>
+        <div class="plan-period">per month</div>
+        <div class="plan-desc">Up to three agents working together. Built for businesses ready to automate multiple workflows and see real ROI every month.</div>
+        <ul class="plan-features">
+          <li>Up to 3 active AI agents</li>
+          <li>Monthly maintenance &amp; updates</li>
+          <li>Priority support response</li>
+          <li>Monthly performance review</li>
+          <li>Agent refinement &amp; tuning</li>
+          <li>New feature additions</li>
+        </ul>
+        <a href="#glimpse-form" class="btn" style="text-align:center;display:block">Get Started</a>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">$499</div>
+        <div class="plan-period">per month</div>
+        <div class="plan-desc">Unlimited agents, full multi-bot collaboration, and dedicated support. For operations that run on systems and need them to keep running.</div>
+        <ul class="plan-features">
+          <li>Unlimited active agents</li>
+          <li>Multi-bot collaboration included</li>
+          <li>Dedicated support line</li>
+          <li>Weekly performance check-ins</li>
+          <li>Custom agent builds included</li>
+          <li>Priority deployment</li>
+        </ul>
+        <a href="#glimpse-form" class="btn-sm" style="text-align:center">Get Started</a>
+        <p class="plan-note">Custom pricing available for large-scale operations.</p>
+      </div>
+
+    </div>
+
+    <div style="border-top:1px solid #1a1a1a;padding-top:36px;margin-bottom:40px">
+      <p class="section-label">One-Time Projects</p>
+      <h2 style="margin-bottom:16px">Not ready for a monthly plan? Start with a build.</h2>
+      <p class="intro" style="margin-bottom:28px">Every monthly plan starts with a build. If you want to test before committing, start with a one-time project — then decide if you want ongoing support.</p>
+    </div>
+
+<div class="services-grid">
       <div class="svc-card">
         <h3>Agent Discovery Consultation</h3>
         <p class="svc-price">$149</p>
