@@ -15,7 +15,7 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#0C0C0C;color:#E2E2E2;font-family:'Arial',sans-serif;line-height:1.6}
+body{background:#0C0C0C;color:#E8E8E8;font-family:'Arial',sans-serif;line-height:1.7}
 
 /* ── NAV ─────────────────────────────────────────────────────── */
 nav{position:sticky;top:0;z-index:100;background:rgba(12,12,12,.97);border-bottom:1px solid #1e1e1e;display:flex;align-items:center;justify-content:space-between;padding:12px 40px}
@@ -43,14 +43,14 @@ nav{position:sticky;top:0;z-index:100;background:rgba(12,12,12,.97);border-botto
 .eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#C9A060;margin-bottom:20px}
 h1{font-size:clamp(30px,4.5vw,54px);font-weight:700;color:#fff;line-height:1.18;max-width:760px;margin-bottom:18px}
 h1 em{font-style:normal;color:#C9A060}
-.hero-sub{font-size:17px;color:#aaa;max-width:580px;margin:0 auto 12px;line-height:1.65}
-.hero-sub2{font-size:14px;color:#666;max-width:520px;margin:0 auto 36px;line-height:1.6}
+.hero-sub{font-size:18px;color:#D0D0D0;max-width:580px;margin:0 auto 12px;line-height:1.65}
+.hero-sub2{font-size:14px;color:#999;max-width:520px;margin:0 auto 36px;line-height:1.6}
 .btn-row{display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap}
 .btn{display:inline-block;background:#C9A060;color:#0C0C0C;border:none;border-radius:32px;padding:15px 32px;font-size:15px;font-weight:700;letter-spacing:.02em;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s}
 .btn:hover{background:#b8904f;transform:translateY(-1px)}
 .btn-outline{display:inline-block;background:transparent;color:#C9A060;border:1px solid #C9A060;border-radius:32px;padding:14px 28px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;transition:background .2s,color .2s}
 .btn-outline:hover{background:#C9A060;color:#0C0C0C}
-.hero-support{font-size:12px;color:#555;margin-top:18px;letter-spacing:.02em}
+.hero-support{font-size:12px;color:#888;margin-top:18px;letter-spacing:.02em}
 .pillars{font-size:11px;color:#444;margin-top:28px;letter-spacing:.16em;text-transform:uppercase}
 
 /* ── SECTION BASICS ──────────────────────────────────────────── */
@@ -58,8 +58,8 @@ h1 em{font-style:normal;color:#C9A060}
 section{padding:80px 40px;max-width:1100px;margin:0 auto;width:100%}
 .section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#C9A060;margin-bottom:12px}
 h2{font-size:clamp(22px,3vw,36px);font-weight:700;color:#fff;margin-bottom:16px;line-height:1.25}
-h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:8px}
-.intro{font-size:15px;color:#aaa;max-width:680px;line-height:1.7;margin-bottom:40px}
+h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:10px}
+.intro{font-size:16px;color:#C4C4C4;max-width:720px;line-height:1.75;margin-bottom:40px}
 
 /* ── AGENT GRID ──────────────────────────────────────────────── */
 .agent-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:40px}
@@ -69,7 +69,7 @@ h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:8px}
 .agent-dot{width:7px;height:7px;border-radius:50%;background:#2a2a2a;position:absolute;top:16px;right:16px;transition:background .25s}
 .agent-icon{font-size:28px;margin-bottom:14px;display:block;line-height:1}
 .agent-name{font-size:13.5px;font-weight:700;color:#fff;margin-bottom:6px;letter-spacing:.02em}
-.agent-desc{font-size:12.5px;color:#777;line-height:1.55}
+.agent-desc{font-size:12.5px;color:#ABABAB;line-height:1.6}
 .agent-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#C9A060;border:1px solid #2a2a2a;border-radius:12px;padding:3px 10px;margin-top:10px}
 
 /* ── MULTI-BOT DIAGRAM ───────────────────────────────────────── */
@@ -85,25 +85,25 @@ h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:8px}
 /* ── SNAPSHOT GLIMPSE ────────────────────────────────────────── */
 .glimpse-wrap{background:#0e0e0e;border:1px solid #1e1e1e;border-radius:14px;padding:48px 40px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .glimpse-left h2{font-size:26px;margin-bottom:12px}
-.glimpse-left p{font-size:15px;color:#aaa;line-height:1.7;margin-bottom:24px}
+.glimpse-left p{font-size:15px;color:#C4C4C4;line-height:1.7;margin-bottom:24px}
 .glimpse-steps{display:flex;flex-direction:column;gap:16px}
 .glimpse-step{display:flex;gap:14px;align-items:flex-start}
 .g-num{width:30px;height:30px;min-width:30px;border:1.5px solid #C9A060;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#C9A060}
 .g-body h4{font-size:13.5px;font-weight:700;color:#fff;margin-bottom:3px}
-.g-body p{font-size:13px;color:#777;line-height:1.5}
+.g-body p{font-size:13px;color:#ABABAB;line-height:1.5}
 .glimpse-right{background:#141414;border:1px solid #222;border-radius:10px;padding:28px 24px}
 .glimpse-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:14px;display:block}
 .glimpse-right h3{font-size:18px;margin-bottom:8px}
 .glimpse-price{font-size:32px;font-weight:700;color:#C9A060;margin:6px 0 14px}
 .glimpse-right ul{padding-left:16px;font-size:13.5px;color:#888;line-height:1.95;margin-bottom:22px}
-.glimpse-note{font-size:11px;color:#444;font-style:italic;margin-top:12px;line-height:1.5}
+.glimpse-note{font-size:11px;color:#777;font-style:italic;margin-top:12px;line-height:1.5}
 .req{color:#E06060}
 
 /* ── FORM ────────────────────────────────────────────────────── */
 .form-wrap{max-width:680px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .form-group{margin-bottom:16px}
-.form-group label{display:block;font-size:12.5px;font-weight:600;color:#aaa;margin-bottom:6px}
+.form-group label{display:block;font-size:13px;font-weight:600;color:#C0C0C0;margin-bottom:6px}
 .form-group input,.form-group select,.form-group textarea{width:100%;background:#141414;border:1px solid #2a2a2a;border-radius:5px;padding:11px 13px;font-size:14px;color:#E2E2E2;outline:none;transition:border-color .2s,box-shadow .2s;font-family:inherit}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#C9A060;box-shadow:0 0 0 3px rgba(201,160,96,.12)}
 .form-group select option{background:#141414}
@@ -118,7 +118,7 @@ h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:8px}
 .svc-card{background:#111;border:1px solid #1e1e1e;border-radius:10px;padding:24px}
 .svc-card h3{font-size:15px;color:#fff;margin-bottom:6px}
 .svc-price{font-size:20px;font-weight:700;color:#C9A060;margin:4px 0 10px}
-.svc-card p{font-size:13px;color:#777;line-height:1.55;margin-bottom:16px}
+.svc-card p{font-size:14px;color:#B4B4B4;line-height:1.6;margin-bottom:16px}
 .btn-sm{display:inline-block;background:transparent;border:1px solid #C9A060;color:#C9A060;border-radius:20px;padding:8px 18px;font-size:12px;font-weight:600;cursor:pointer;text-decoration:none;transition:background .2s,color .2s}
 .btn-sm:hover{background:#C9A060;color:#0C0C0C}
 
@@ -127,14 +127,14 @@ h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:8px}
 .faq-q{display:flex;justify-content:space-between;align-items:center}
 .faq-q p{font-weight:700;color:#fff;font-size:15px}
 .faq-icon{color:#C9A060;font-size:20px}
-.faq-a{font-size:14px;color:#888;line-height:1.65;margin-top:10px;display:none}
+.faq-a{font-size:14px;color:#C4C4C4;line-height:1.7;margin-top:10px;display:none}
 
 /* ── FOOTER ──────────────────────────────────────────────────── */
 footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-align:center}
 .footer-brand{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:14px}
-.footer-pillars{font-size:11px;color:#444;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+.footer-pillars{font-size:11px;color:#777;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
 .footer-tagline{font-size:13px;color:#C9A060;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
-.footer-copy{font-size:12px;color:#333}
+.footer-copy{font-size:12px;color:#666}
 
 /* ── RESPONSIVE ──────────────────────────────────────────────── */
 @media(max-width:900px){
@@ -157,11 +157,11 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
 .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:16px}
 .testimonial-card{background:#111;border:1px solid #1e1e1e;border-radius:10px;padding:26px 22px;position:relative}
 .testimonial-card::before{content:'"';position:absolute;top:14px;left:18px;font-size:48px;color:#C9A060;opacity:.35;line-height:1;font-family:Georgia,serif}
-.testimonial-text{font-size:14px;color:#aaa;line-height:1.75;margin-bottom:18px;padding-top:20px}
+.testimonial-text{font-size:14px;color:#C4C4C4;line-height:1.8;margin-bottom:18px;padding-top:20px}
 .testimonial-author{display:flex;align-items:center;gap:12px;border-top:1px solid #1e1e1e;padding-top:14px}
 .testimonial-avatar{width:38px;height:38px;min-width:38px;border-radius:50%;background:#1a1a1a;border:1px solid #C9A060;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#C9A060}
 .testimonial-name{font-size:13px;font-weight:700;color:#fff}
-.testimonial-role{font-size:12px;color:#555}
+.testimonial-role{font-size:12px;color:#888}
 .testimonial-placeholder{text-align:center;padding:40px 24px;background:#0e0e0e;border:1px dashed #222;border-radius:10px}
 .testimonial-placeholder p{font-size:13px;color:#444;line-height:1.7}
 @media(max-width:720px){.testimonials-grid{grid-template-columns:1fr}}
@@ -174,15 +174,30 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
 .plan-name{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:10px}
 .plan-price{font-size:36px;font-weight:700;color:#fff;line-height:1}
 .plan-period{font-size:13px;color:#555;margin-bottom:16px;margin-top:4px}
-.plan-desc{font-size:13px;color:#777;line-height:1.6;margin-bottom:20px}
+.plan-desc{font-size:13px;color:#B4B4B4;line-height:1.65;margin-bottom:20px}
 .plan-features{list-style:none;padding:0;margin:0 0 24px;flex:1}
 .plan-features li{font-size:13px;color:#aaa;padding:7px 0;border-bottom:1px solid #1a1a1a;display:flex;align-items:flex-start;gap:8px}
 .plan-features li::before{content:"✓";color:#C9A060;font-weight:700;flex-shrink:0;margin-top:1px}
-.plan-note{font-size:11px;color:#444;font-style:italic;margin-top:12px;text-align:center}
+.plan-note{font-size:11px;color:#888;font-style:italic;margin-top:12px;text-align:center}
 .plans-intro{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:gap}
 .passive-badge{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:6px;padding:10px 16px;font-size:12px;color:#888}
 .passive-badge strong{color:#C9A060}
 @media(max-width:720px){.plans-grid{grid-template-columns:1fr}}
+
+/* ── ROI SECTION ─────────────────────────────────────────────── */
+.roi-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:32px}
+.roi-card{background:#0e0e0e;border:1px solid #1e1e1e;border-radius:10px;padding:24px}
+.roi-card.gold-border{border-color:#C9A060}
+.roi-card-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:14px}
+.roi-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #1a1a1a;font-size:14px}
+.roi-row:last-child{border-bottom:none}
+.roi-row-label{color:#C0C0C0}
+.roi-row-val{font-weight:700;color:#fff}
+.roi-row-val.gold{color:#C9A060}
+.roi-row-val.green{color:#4CAF50}
+.roi-highlight{background:#141414;border:1px solid #C9A060;border-radius:8px;padding:16px 20px;text-align:center;margin-top:20px}
+.roi-highlight-num{font-size:36px;font-weight:700;color:#C9A060}
+.roi-highlight-label{font-size:13px;color:#B4B4B4;margin-top:4px}
 </style>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDQP6BWKTC"></script>
@@ -218,6 +233,7 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
     <li><a href="#about">About</a></li>
     <li><a href="#snapshot" class="active">Free Glimpse</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="#roi">ROI</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
   <a href="#snapshot" class="nav-cta">Get Your Free Glimpse</a>
@@ -381,7 +397,7 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
       <div style="background:#111;border:1px solid #1e1e1e;border-radius:8px;padding:22px 20px">
         <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:10px">01 — Identify</p>
         <h3>Find the friction</h3>
-        <p style="font-size:13.5px;color:#777;line-height:1.6;margin-top:6px">We locate the tasks, processes, and bottlenecks where AI can make an immediate difference.</p>
+        <p style="font-size:14px;color:#B4B4B4;line-height:1.65;margin-top:6px">We locate the tasks, processes, and bottlenecks where AI can make an immediate difference.</p>
       </div>
       <div style="background:#111;border:1px solid #1e1e1e;border-radius:8px;padding:22px 20px">
         <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#C9A060;margin-bottom:10px">02 — Design</p>
@@ -664,6 +680,64 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
         <p>Something unique? We scope and build custom AI workflows, agent pipelines, and operational systems for any use case.</p>
         <a href="#glimpse-form" class="btn-sm">Start Here</a>
       </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ROI SECTION -->
+<div class="section-outer" id="roi">
+  <section>
+    <p class="section-label">Return on Investment</p>
+    <h2>What an AI Agent Is Actually Worth.</h2>
+    <p class="intro">Every agent we build is measured against one thing — the return it delivers. Here's the honest math on what a purpose-built AI agent costs versus what it gives back.</p>
+
+    <div class="roi-grid">
+      <div class="roi-card gold-border">
+        <div class="roi-card-label">The Agent Cost</div>
+        <div class="roi-row"><span class="roi-row-label">Single Agent Build</span><span class="roi-row-val">$199 once</span></div>
+        <div class="roi-row"><span class="roi-row-label">Monthly Maintenance (Starter)</span><span class="roi-row-val">$99/mo</span></div>
+        <div class="roi-row"><span class="roi-row-label">Year 1 Total (build + 12 months)</span><span class="roi-row-val gold">$1,387</span></div>
+        <div class="roi-highlight">
+          <div class="roi-highlight-num">$115</div>
+          <div class="roi-highlight-label">per month, all-in, year one</div>
+        </div>
+      </div>
+
+      <div class="roi-card">
+        <div class="roi-card-label">What the Agent Gives Back</div>
+        <div class="roi-row"><span class="roi-row-label">Hours saved per week (avg)</span><span class="roi-row-val gold">5–10 hrs</span></div>
+        <div class="roi-row"><span class="roi-row-label">Hours saved per month</span><span class="roi-row-val gold">20–40 hrs</span></div>
+        <div class="roi-row"><span class="roi-row-label">Value at $50/hr opportunity cost</span><span class="roi-row-val green">$1,000–$2,000/mo</span></div>
+        <div class="roi-row"><span class="roi-row-label">Errors caught (contract gaps, hazards)</span><span class="roi-row-val green">Priceless</span></div>
+        <div class="roi-highlight">
+          <div class="roi-highlight-num" style="color:#4CAF50">10x–17x</div>
+          <div class="roi-highlight-label">return on investment, month one</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:#0e0e0e;border:1px solid #1e1e1e;border-radius:10px;padding:24px;margin-bottom:32px">
+      <p class="section-label" style="margin-bottom:12px">Real Example — Contract Review Agent</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+        <div style="text-align:center;padding:16px">
+          <div style="font-size:28px;font-weight:700;color:#E06060">3 hrs</div>
+          <div style="font-size:13px;color:#B4B4B4;margin-top:6px">Manual contract review time (per contract)</div>
+        </div>
+        <div style="text-align:center;padding:16px;border-left:1px solid #1a1a1a;border-right:1px solid #1a1a1a">
+          <div style="font-size:28px;font-weight:700;color:#C9A060">12 min</div>
+          <div style="font-size:13px;color:#B4B4B4;margin-top:6px">AI agent review time (same contract)</div>
+        </div>
+        <div style="text-align:center;padding:16px">
+          <div style="font-size:28px;font-weight:700;color:#4CAF50">93%</div>
+          <div style="font-size:13px;color:#B4B4B4;margin-top:6px">Time saved — every single contract</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center">
+      <p style="font-size:15px;color:#C4C4C4;max-width:600px;margin:0 auto 24px;line-height:1.7">The question is not whether you can afford an AI agent. The question is how much the manual process is costing you every month without one.</p>
+      <a href="#snapshot" class="btn">See What an Agent Could Do for You — Free</a>
     </div>
   </section>
 </div>
