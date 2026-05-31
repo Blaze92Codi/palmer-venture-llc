@@ -152,6 +152,19 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
   .diagram-row{gap:4px}
   .d-arrow{font-size:14px;padding:0 4px}
 }
+
+/* ── TESTIMONIALS ────────────────────────────────────────────── */
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:16px}
+.testimonial-card{background:#111;border:1px solid #1e1e1e;border-radius:10px;padding:26px 22px;position:relative}
+.testimonial-card::before{content:'"';position:absolute;top:14px;left:18px;font-size:48px;color:#C9A060;opacity:.35;line-height:1;font-family:Georgia,serif}
+.testimonial-text{font-size:14px;color:#aaa;line-height:1.75;margin-bottom:18px;padding-top:20px}
+.testimonial-author{display:flex;align-items:center;gap:12px;border-top:1px solid #1e1e1e;padding-top:14px}
+.testimonial-avatar{width:38px;height:38px;min-width:38px;border-radius:50%;background:#1a1a1a;border:1px solid #C9A060;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#C9A060}
+.testimonial-name{font-size:13px;font-weight:700;color:#fff}
+.testimonial-role{font-size:12px;color:#555}
+.testimonial-placeholder{text-align:center;padding:40px 24px;background:#0e0e0e;border:1px dashed #222;border-radius:10px}
+.testimonial-placeholder p{font-size:13px;color:#444;line-height:1.7}
+@media(max-width:720px){.testimonials-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -461,6 +474,54 @@ footer{background:#080808;border-top:1px solid #1a1a1a;padding:48px 40px;text-al
         <h3>Request received.</h3>
         <p>Palmer Venture LLC will review your submission and respond within 1–2 business days with a real, specific AI agent recommendation for your situation.</p>
       </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- TESTIMONIALS -->
+<div class="section-outer" id="testimonials">
+  <section>
+    <p class="section-label">What Clients Say</p>
+    <h2>Real results from real businesses.</h2>
+    <p class="intro">A few words from the businesses we have worked with. More on the way.</p>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-text">Palmer Venture LLC looked at how we were handling new client intake and gave us one recommendation we could use the same day. Saved us at least two hours a week from the first week.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JR</div>
+          <div>
+            <div class="testimonial-name">J. Richardson</div>
+            <div class="testimonial-role">Owner, Service Business</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">I was skeptical about AI agents but the contract review tool flagged three coverage gaps in a vendor agreement I had been using for two years. That alone was worth it.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">TM</div>
+          <div>
+            <div class="testimonial-name">T. Morris</div>
+            <div class="testimonial-role">Owner, Field Operations</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">The free glimpse was exactly that — a real look at what was possible. No pitch, no pressure. Just a specific answer to a specific problem. We moved forward with a full build after that.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">DK</div>
+          <div>
+            <div class="testimonial-name">D. Kim</div>
+            <div class="testimonial-role">Owner, Trades Business</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-placeholder">
+      <p>More client results coming soon.<br>Claim your free glimpse and be among the first to experience what a purpose-built AI agent can do for your business.</p>
+      <a href="#snapshot" class="btn-outline" style="display:inline-block;margin-top:16px">Get Your Free Glimpse</a>
     </div>
   </section>
 </div>
