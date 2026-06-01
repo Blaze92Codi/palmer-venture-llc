@@ -105,21 +105,27 @@
     .hero-card { background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.14); border-radius: 32px; padding: 30px; box-shadow: 0 30px 80px rgba(0,0,0,0.45); }
     .hero-card img { width: 100%; border-radius: 24px; border: 1px solid rgba(255,255,255,0.12); }
 
-    /* ============ TICKER ============ */
-    .ticker {
+    /* ============ TICKER (Real Needs / Agent pairings) ============ */
+    .pv-ticker-head { display: flex; align-items: center; justify-content: center; gap: 9px; padding: 22px 0 14px; background: var(--black); }
+    .pv-ticker-label { font-size: 0.78rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--medium-gray); font-weight: 700; }
+    .pv-live-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); position: relative; display: inline-block; }
+    .pv-live-dot::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--gold); animation: pvpulse 1.8s ease-out infinite; }
+    @keyframes pvpulse { 0% { transform: scale(1); opacity: 0.7; } 100% { transform: scale(3.2); opacity: 0; } }
+
+    .pv-ticker {
       background: linear-gradient(180deg, var(--charcoal), var(--black));
       border-top: 1px solid var(--gold); border-bottom: 1px solid var(--line);
-      overflow: hidden; white-space: nowrap; position: relative; padding: 15px 0;
+      overflow: hidden; white-space: nowrap; position: relative; padding: 18px 0;
     }
-    .ticker::before, .ticker::after { content: ""; position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2; pointer-events: none; }
-    .ticker::before { left: 0; background: linear-gradient(90deg, var(--black), transparent); }
-    .ticker::after  { right: 0; background: linear-gradient(270deg, var(--black), transparent); }
-    .track { display: inline-block; white-space: nowrap; animation: scroll 40s linear infinite; }
-    .ticker:hover .track { animation-play-state: paused; }
-    .track span { display: inline-block; padding: 0 36px; font-size: 0.95rem; letter-spacing: 0.04em; color: var(--light-gray); position: relative; }
-    .track span::after { content: "\25C6"; position: absolute; right: -5px; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 7px; }
-    .track b { color: var(--gold-bright); font-weight: 700; }
-    @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .pv-ticker::before, .pv-ticker::after { content: ""; position: absolute; top: 0; bottom: 0; width: 90px; z-index: 2; pointer-events: none; }
+    .pv-ticker::before { left: 0; background: linear-gradient(90deg, var(--black), transparent); }
+    .pv-ticker::after  { right: 0; background: linear-gradient(270deg, var(--black), transparent); }
+    .pv-track { display: inline-block; white-space: nowrap; animation: pvscroll 44s linear infinite; }
+    .pv-ticker:hover .pv-track { animation-play-state: paused; }
+    .pv-item { display: inline-block; padding: 0 34px; font-size: 1rem; color: var(--bright); font-style: italic; position: relative; }
+    .pv-item em { font-style: normal; color: var(--gold-bright); font-weight: 700; letter-spacing: 0.02em; }
+    .pv-item::after { content: ""; position: absolute; right: -3px; top: 50%; width: 5px; height: 5px; background: var(--gold); border-radius: 50%; transform: translateY(-50%); }
+    @keyframes pvscroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
     /* ============ SECTIONS ============ */
     section { padding: 90px 0; }
@@ -257,7 +263,8 @@
       .panel, .stat, .step, .plan-card, .faq-item { padding: 22px; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .track { animation: none; }
+      .pv-track { animation: none; }
+      .pv-live-dot::after { animation: none; }
       .reveal { opacity: 1; transform: none; transition: none; }
       html { scroll-behavior: auto; }
     }
@@ -320,21 +327,30 @@
       </div>
     </section>
 
-    <!-- TICKER -->
-    <div class="ticker" aria-hidden="true">
-      <div class="track">
-        <span>Fewer dropped handoffs</span>
-        <span>Less time lost to <b>"how do we do this again?"</b></span>
-        <span>Work that runs without you in the room</span>
-        <span>One clear system instead of scattered steps</span>
-        <span>Faster client intake &amp; follow-up</span>
-        <span>SOPs your team can actually follow</span>
-        <span>Fewer dropped handoffs</span>
-        <span>Less time lost to <b>"how do we do this again?"</b></span>
-        <span>Work that runs without you in the room</span>
-        <span>One clear system instead of scattered steps</span>
-        <span>Faster client intake &amp; follow-up</span>
-        <span>SOPs your team can actually follow</span>
+    <!-- TICKER — Real Needs / Agent pairings (live-dot header + scrolling strip) -->
+    <div class="pv-ticker-head">
+      <span class="pv-live-dot" aria-hidden="true"></span>
+      <span class="pv-ticker-label">Real Needs We Solve</span>
+    </div>
+    <div class="pv-ticker" aria-hidden="true">
+      <div class="pv-track">
+        <span class="pv-item">"I keep losing leads I can't call back fast enough" <em>&rarr; Follow-Up Agent</em></span>
+        <span class="pv-item">"I write the same quotes every night" <em>&rarr; Quote &amp; Estimate Agent</em></span>
+        <span class="pv-item">"Scheduling is endless back-and-forth" <em>&rarr; Booking Agent</em></span>
+        <span class="pv-item">"New clients ask me the same things daily" <em>&rarr; Intake &amp; FAQ Agent</em></span>
+        <span class="pv-item">"I always forget to ask for the review" <em>&rarr; Review Request Agent</em></span>
+        <span class="pv-item">"Chasing invoices eats my whole week" <em>&rarr; Invoice Reminder Agent</em></span>
+        <span class="pv-item">"After-hours inquiries go unanswered" <em>&rarr; Intake &amp; FAQ Agent</em></span>
+        <span class="pv-item">"Onboarding a client takes me a full day" <em>&rarr; Onboarding Agent</em></span>
+        <!-- duplicate set for a seamless loop -->
+        <span class="pv-item">"I keep losing leads I can't call back fast enough" <em>&rarr; Follow-Up Agent</em></span>
+        <span class="pv-item">"I write the same quotes every night" <em>&rarr; Quote &amp; Estimate Agent</em></span>
+        <span class="pv-item">"Scheduling is endless back-and-forth" <em>&rarr; Booking Agent</em></span>
+        <span class="pv-item">"New clients ask me the same things daily" <em>&rarr; Intake &amp; FAQ Agent</em></span>
+        <span class="pv-item">"I always forget to ask for the review" <em>&rarr; Review Request Agent</em></span>
+        <span class="pv-item">"Chasing invoices eats my whole week" <em>&rarr; Invoice Reminder Agent</em></span>
+        <span class="pv-item">"After-hours inquiries go unanswered" <em>&rarr; Intake &amp; FAQ Agent</em></span>
+        <span class="pv-item">"Onboarding a client takes me a full day" <em>&rarr; Onboarding Agent</em></span>
       </div>
     </div>
 
